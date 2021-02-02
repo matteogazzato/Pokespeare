@@ -1,0 +1,6 @@
+framework module Pods_Pokespeare_sdkTests {
+  umbrella header "Pods-Pokespeare-sdkTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
