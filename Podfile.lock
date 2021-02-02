@@ -1,0 +1,16 @@
+PODS:
+  - Pokespeare-sdk (0.0.1)
+
+DEPENDENCIES:
+  - Pokespeare-sdk (from `.`)
+
+EXTERNAL SOURCES:
+  Pokespeare-sdk:
+    :path: "."
+
+SPEC CHECKSUMS:
+  Pokespeare-sdk: 651ecef1b1a43e13688072b809b0f0080c3d7ef3
+
+PODFILE CHECKSUM: 1c41a1c4e2f2a2bf0aefb435d8979ec9ed49148b
+
+COCOAPODS: 1.10.1
