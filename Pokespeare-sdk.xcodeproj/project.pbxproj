@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		475A736B25C9FAE60044DA35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475A736925C9FAE60044DA35 /* Main.storyboard */; };
 		475A736D25C9FAE80044DA35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 475A736C25C9FAE80044DA35 /* Assets.xcassets */; };
 		475A737025C9FAE80044DA35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475A736E25C9FAE80044DA35 /* LaunchScreen.storyboard */; };
+		47DF036C25CA102900DBBD2C /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF036B25CA102900DBBD2C /* APIConfiguration.swift */; };
+		47DF037125CA105200DBBD2C /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF037025CA105200DBBD2C /* NetworkClient.swift */; };
+		47DF037625CA10A000DBBD2C /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF037525CA10A000DBBD2C /* NetworkConstants.swift */; };
 		900A71EDE8194671583FE74C /* Pods_Pokespeare_sdk_tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73053B424F1825E6478CF316 /* Pods_Pokespeare_sdk_tests.framework */; };
 		BCB1787D843F859BD32250A6 /* Pods_Pokespeare_sdk_examples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E9B3E2AE6DD2ED014338787 /* Pods_Pokespeare_sdk_examples.framework */; };
 		DB17BF2144EB3A8A2AA72D9E /* Pods_Pokespeare_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C91E61494722F467A0FF82F3 /* Pods_Pokespeare_sdk.framework */; };
@@ -44,6 +47,9 @@
 		475A736C25C9FAE80044DA35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		475A736F25C9FAE80044DA35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		475A737125C9FAE80044DA35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47DF036B25CA102900DBBD2C /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		47DF037025CA105200DBBD2C /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		47DF037525CA10A000DBBD2C /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		4D3458AFDB153FCF60D19D6F /* Pods-Pokespeare-sdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokespeare-sdk.debug.xcconfig"; path = "Target Support Files/Pods-Pokespeare-sdk/Pods-Pokespeare-sdk.debug.xcconfig"; sourceTree = "<group>"; };
 		6776CD1E678BEA557EBE5989 /* Pods-Pokespeare-sdk-tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokespeare-sdk-tests.release.xcconfig"; path = "Target Support Files/Pods-Pokespeare-sdk-tests/Pods-Pokespeare-sdk-tests.release.xcconfig"; sourceTree = "<group>"; };
 		73053B424F1825E6478CF316 /* Pods_Pokespeare_sdk_tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pokespeare_sdk_tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +130,7 @@
 		475A734325C9F97F0044DA35 /* Pokespeare-sdk */ = {
 			isa = PBXGroup;
 			children = (
+				47DF036A25CA0FEA00DBBD2C /* Network */,
 				475A734525C9F97F0044DA35 /* Info.plist */,
 			);
 			path = "Pokespeare-sdk";
@@ -149,6 +156,16 @@
 				475A737125C9FAE80044DA35 /* Info.plist */,
 			);
 			path = "Pokespeare-sdk-examples";
+			sourceTree = "<group>";
+		};
+		47DF036A25CA0FEA00DBBD2C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				47DF036B25CA102900DBBD2C /* APIConfiguration.swift */,
+				47DF037025CA105200DBBD2C /* NetworkClient.swift */,
+				47DF037525CA10A000DBBD2C /* NetworkConstants.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		72FD6DABAC4D01B686445A3A /* Frameworks */ = {
@@ -242,6 +259,7 @@
 				TargetAttributes = {
 					475A734025C9F97F0044DA35 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					475A734925C9F97F0044DA35 = {
 						CreatedOnToolsVersion = 12.4;
@@ -389,6 +407,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47DF037625CA10A000DBBD2C /* NetworkConstants.swift in Sources */,
+				47DF036C25CA102900DBBD2C /* APIConfiguration.swift in Sources */,
+				47DF037125CA105200DBBD2C /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,6 +586,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4D3458AFDB153FCF60D19D6F /* Pods-Pokespeare-sdk.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = A5P6GR8YMP;
@@ -581,6 +603,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.matteogazzato.Pokespeare-sdk";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -590,6 +613,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EDA17DE9471DF795C542C0F2 /* Pods-Pokespeare-sdk.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = A5P6GR8YMP;
@@ -615,6 +639,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C1BFD5628321D0C4C67C7E6D /* Pods-Pokespeare-sdk-tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5P6GR8YMP;
 				INFOPLIST_FILE = "Pokespeare-sdkTests/Info.plist";
@@ -634,6 +659,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6776CD1E678BEA557EBE5989 /* Pods-Pokespeare-sdk-tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5P6GR8YMP;
 				INFOPLIST_FILE = "Pokespeare-sdkTests/Info.plist";
