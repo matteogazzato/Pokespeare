@@ -14,9 +14,14 @@
 		475A736B25C9FAE60044DA35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475A736925C9FAE60044DA35 /* Main.storyboard */; };
 		475A736D25C9FAE80044DA35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 475A736C25C9FAE80044DA35 /* Assets.xcassets */; };
 		475A737025C9FAE80044DA35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475A736E25C9FAE80044DA35 /* LaunchScreen.storyboard */; };
+		47B6031625CB282200960F5B /* PokemonInfoAPIDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B6031525CB282200960F5B /* PokemonInfoAPIDescriptor.swift */; };
+		47B6031C25CB4E2F00960F5B /* PokemonInfoAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B6031B25CB4E2F00960F5B /* PokemonInfoAPIClient.swift */; };
+		47B6032425CB4EEF00960F5B /* PokemonInfoDescriptionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B6032325CB4EEF00960F5B /* PokemonInfoDescriptionResponse.swift */; };
+		47B6032C25CB52DD00960F5B /* PokemonInfoSpritesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B6032B25CB52DD00960F5B /* PokemonInfoSpritesResponse.swift */; };
 		47DF036C25CA102900DBBD2C /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF036B25CA102900DBBD2C /* APIConfiguration.swift */; };
 		47DF037125CA105200DBBD2C /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF037025CA105200DBBD2C /* NetworkClient.swift */; };
 		47DF037625CA10A000DBBD2C /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF037525CA10A000DBBD2C /* NetworkConstants.swift */; };
+		47DF037C25CA12DF00DBBD2C /* PokemonInfoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF037B25CA12DF00DBBD2C /* PokemonInfoAPI.swift */; };
 		900A71EDE8194671583FE74C /* Pods_Pokespeare_sdk_tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73053B424F1825E6478CF316 /* Pods_Pokespeare_sdk_tests.framework */; };
 		BCB1787D843F859BD32250A6 /* Pods_Pokespeare_sdk_examples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E9B3E2AE6DD2ED014338787 /* Pods_Pokespeare_sdk_examples.framework */; };
 		DB17BF2144EB3A8A2AA72D9E /* Pods_Pokespeare_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C91E61494722F467A0FF82F3 /* Pods_Pokespeare_sdk.framework */; };
@@ -47,9 +52,14 @@
 		475A736C25C9FAE80044DA35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		475A736F25C9FAE80044DA35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		475A737125C9FAE80044DA35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47B6031525CB282200960F5B /* PokemonInfoAPIDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoAPIDescriptor.swift; sourceTree = "<group>"; };
+		47B6031B25CB4E2F00960F5B /* PokemonInfoAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoAPIClient.swift; sourceTree = "<group>"; };
+		47B6032325CB4EEF00960F5B /* PokemonInfoDescriptionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoDescriptionResponse.swift; sourceTree = "<group>"; };
+		47B6032B25CB52DD00960F5B /* PokemonInfoSpritesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoSpritesResponse.swift; sourceTree = "<group>"; };
 		47DF036B25CA102900DBBD2C /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
 		47DF037025CA105200DBBD2C /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		47DF037525CA10A000DBBD2C /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		47DF037B25CA12DF00DBBD2C /* PokemonInfoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoAPI.swift; sourceTree = "<group>"; };
 		4D3458AFDB153FCF60D19D6F /* Pods-Pokespeare-sdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokespeare-sdk.debug.xcconfig"; path = "Target Support Files/Pods-Pokespeare-sdk/Pods-Pokespeare-sdk.debug.xcconfig"; sourceTree = "<group>"; };
 		6776CD1E678BEA557EBE5989 /* Pods-Pokespeare-sdk-tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokespeare-sdk-tests.release.xcconfig"; path = "Target Support Files/Pods-Pokespeare-sdk-tests/Pods-Pokespeare-sdk-tests.release.xcconfig"; sourceTree = "<group>"; };
 		73053B424F1825E6478CF316 /* Pods_Pokespeare_sdk_tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pokespeare_sdk_tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,14 +168,43 @@
 			path = "Pokespeare-sdk-examples";
 			sourceTree = "<group>";
 		};
+		47B6031425CB280400960F5B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				47B6031525CB282200960F5B /* PokemonInfoAPIDescriptor.swift */,
+				47B6032325CB4EEF00960F5B /* PokemonInfoDescriptionResponse.swift */,
+				47B6032B25CB52DD00960F5B /* PokemonInfoSpritesResponse.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		47B6031A25CB4E0F00960F5B /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				47B6031B25CB4E2F00960F5B /* PokemonInfoAPIClient.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
 		47DF036A25CA0FEA00DBBD2C /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				47B6031A25CB4E0F00960F5B /* Clients */,
+				47B6031425CB280400960F5B /* Entities */,
+				47DF037A25CA12B900DBBD2C /* APIs */,
 				47DF036B25CA102900DBBD2C /* APIConfiguration.swift */,
 				47DF037025CA105200DBBD2C /* NetworkClient.swift */,
 				47DF037525CA10A000DBBD2C /* NetworkConstants.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		47DF037A25CA12B900DBBD2C /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				47DF037B25CA12DF00DBBD2C /* PokemonInfoAPI.swift */,
+			);
+			path = APIs;
 			sourceTree = "<group>";
 		};
 		72FD6DABAC4D01B686445A3A /* Frameworks */ = {
@@ -200,6 +239,7 @@
 				475A733D25C9F97F0044DA35 /* Sources */,
 				475A733E25C9F97F0044DA35 /* Frameworks */,
 				475A733F25C9F97F0044DA35 /* Resources */,
+				47DF038325CA134F00DBBD2C /* TODOs & FIXMEs warnings check */,
 			);
 			buildRules = (
 			);
@@ -356,6 +396,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pokespeare-sdk-tests/Pods-Pokespeare-sdk-tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		47DF038325CA134F00DBBD2C /* TODOs & FIXMEs warnings check */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "TODOs & FIXMEs warnings check";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "KEYWORDS=\"STUB:|WARNING:|TODO:|FIXME:\" \nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -not -path \"${SRCROOT}/Pods/*\" -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | perl -p -e \"s/($KEYWORDS)/1: warning: \\$1/\"\n\nKEYWORDS=\"ERROR:\" \nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -not -path \"${SRCROOT}/Pods/*\" -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | perl -p -e \"s/($KEYWORDS)/1: error: \\$1/\"\nERROR_OUTPUT=`find \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -not -path \"${SRCROOT}/Pods/*\" -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | perl -p -e \"s/($KEYWORDS)/1: error: \\$1/\"`\n\nexit ${#ERROR_OUTPUT}\n\n";
+		};
 		6082BD2EADE36661CCEC2A2A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -407,9 +465,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47B6031625CB282200960F5B /* PokemonInfoAPIDescriptor.swift in Sources */,
 				47DF037625CA10A000DBBD2C /* NetworkConstants.swift in Sources */,
+				47B6032C25CB52DD00960F5B /* PokemonInfoSpritesResponse.swift in Sources */,
+				47B6032425CB4EEF00960F5B /* PokemonInfoDescriptionResponse.swift in Sources */,
 				47DF036C25CA102900DBBD2C /* APIConfiguration.swift in Sources */,
+				47DF037C25CA12DF00DBBD2C /* PokemonInfoAPI.swift in Sources */,
 				47DF037125CA105200DBBD2C /* NetworkClient.swift in Sources */,
+				47B6031C25CB4E2F00960F5B /* PokemonInfoAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

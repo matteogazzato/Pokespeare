@@ -8,7 +8,7 @@
 import Alamofire
 
 struct NetworkConstants {
-        
+    static var basePokemonAPIUrlString = "https://pokeapi.co/api/v2/"
 }
 
 enum HTTPHeaderField: String {
