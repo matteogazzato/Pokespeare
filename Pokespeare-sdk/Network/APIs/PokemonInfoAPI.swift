@@ -9,19 +9,19 @@ import Alamofire
 
 enum PokemonInfoAPI: APIConfiguration {
     
-    case description(_ desc: PokemonInfoAPIDescriptor)
+    case descriptions(_ desc: PokemonInfoAPIDescriptor)
     case sprites(_ desc: PokemonInfoAPIDescriptor)
     
     var method: HTTPMethod {
         switch self {
-        case .description(_), .sprites(_):
+        case .descriptions(_), .sprites(_):
             return .get
         }
     }
     
     var path: String {
         switch self {
-        case .description(let desc):
+        case .descriptions(let desc):
             return "pokemon-species/\(desc.name)"
         case .sprites(let desc):
             return "pokemon/\(desc.name)"
@@ -30,7 +30,7 @@ enum PokemonInfoAPI: APIConfiguration {
     
     var parameters: Parameters {
         switch self {
-        case .description(_), .sprites(_):
+        case .descriptions(_), .sprites(_):
             return [:]
         }
     }
@@ -38,7 +38,7 @@ enum PokemonInfoAPI: APIConfiguration {
     func asURLRequest() throws -> URLRequest {
         var url: URL?
         switch self {
-        case .description(_), .sprites(_):
+        case .descriptions(_), .sprites(_):
             url = URL(string: NetworkConstants.basePokemonAPIUrlString + path)
         }
         guard let _url = url else {

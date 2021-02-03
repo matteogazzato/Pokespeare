@@ -6,7 +6,5 @@
 //
 
 struct PokemonInfoAPIDescriptor {
-    let version: Int
     let name: String
-    let locale: String
 }

@@ -9,8 +9,8 @@ import Alamofire
 import RxSwift
 
 class PokemonInfoAPIClient {
-    static func pokemonDescription(fromDescriptor desc: PokemonInfoAPIDescriptor) -> Observable<PokemonInfoDescriptionResponse> {
-        return NetworkClient.request(PokemonInfoAPI.description(desc))
+    static func pokemonDescriptions(fromDescriptor desc: PokemonInfoAPIDescriptor) -> Observable<PokemonInfoDescriptionResponse> {
+        return NetworkClient.request(PokemonInfoAPI.descriptions(desc))
     }
     
     static func pokemonSprites(fromDescriptor desc: PokemonInfoAPIDescriptor) -> Observable<PokemonInfoSpritesResponse> {

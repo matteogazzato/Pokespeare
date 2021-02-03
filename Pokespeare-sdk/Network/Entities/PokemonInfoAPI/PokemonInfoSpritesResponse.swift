@@ -6,5 +6,12 @@
 //
 
 struct PokemonInfoSpritesResponse: Codable {
+    let sprites: Sprite
+    let name: String
+    
+    enum CodingKeys: String, CodingKey {
+        case sprites
+        case name
+    }
     
 }
