@@ -1,49 +1,50 @@
 //
-//  PokemonInfoAPI.swift
+//  ShakespeareAPI.swift
 //  Pokespeare-sdk
 //
-//  Created by Matteo Gazzato on 03/02/21.
+//  Created by Matteo Gazzato on 04/02/21.
 //
-
 import Alamofire
 
-enum PokemonInfoAPI: APIConfiguration {
+enum ShakespeareAPI: APIConfiguration {
     
-    case descriptions(_ desc: PokemonInfoAPIDescriptor)
-    case sprites(_ desc: PokemonInfoAPIDescriptor)
+    case translate(_ desc: ShakespeareAPIDescriptor)
     
     var method: HTTPMethod {
         switch self {
-        case .descriptions, .sprites:
-            return .get
+        case .translate:
+            return .post
         }
     }
     
     var path: String {
         switch self {
-        case .descriptions(let desc):
-            return "pokemon-species/\(desc.name)"
-        case .sprites(let desc):
-            return "pokemon/\(desc.name)"
+        case .translate:
+            return "shakespeare"
         }
     }
     
     var parameters: Parameters {
+        var params: [String: Any] = [:]
         switch self {
-        case .descriptions, .sprites:
-            return [:]
+        case .translate(let desc):
+            params = ["text": desc.textToTranslate]
+        
         }
+        return params
     }
     
     func asURLRequest() throws -> URLRequest {
         var url: URL?
         switch self {
-        case .descriptions, .sprites:
-            url = URL(string: NetworkConstants.pokemonAPIBaseUrlString + path)
+        case .translate:
+            url = URL(string: NetworkConstants.shakespeareAPIBaseUrlString + path)
         }
+        
         guard let _url = url else {
             throw APIError.badUrl
         }
+        
         var urlRequest = URLRequest(url: _url)
         
         //Http method
@@ -52,14 +53,13 @@ enum PokemonInfoAPI: APIConfiguration {
         //Encoding
         let encoding: ParameterEncoding = {
             switch method {
-            case .get:
-                return URLEncoding.default
+            case .post:
+                return JSONEncoding.default
             default:
                 return JSONEncoding.default
             }
         }()
         
         return try encoding.encode(urlRequest, with: parameters)
-        
     }
 }

@@ -39,6 +39,9 @@ class NetworkClient {
                     case 409:
                         NSLog("Server status code 409 CONFLICT")
                         observer.onError(APIError.conflict)
+                    case 429:
+                        NSLog("Server status code 429 TOO MANY REQUESTS")
+                        observer.onError(APIError.tooManyRequests)
                     case 500:
                         NSLog("Server status code 500 INTERNAL SERVER ERROR")
                         observer.onError(APIError.internalServerError)

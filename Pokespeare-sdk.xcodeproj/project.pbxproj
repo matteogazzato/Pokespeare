@@ -23,6 +23,12 @@
 		47B6035225CB597F00960F5B /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B6035125CB597F00960F5B /* Language.swift */; };
 		47B6035725CB598700960F5B /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B6035625CB598700960F5B /* Version.swift */; };
 		47B6035C25CB601C00960F5B /* Sprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B6035B25CB601C00960F5B /* Sprite.swift */; };
+		47B6036125CB658F00960F5B /* ShakespeareAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B6036025CB658F00960F5B /* ShakespeareAPI.swift */; };
+		47B6036725CB663100960F5B /* ShakespeareAPIDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B6036625CB663100960F5B /* ShakespeareAPIDescriptor.swift */; };
+		47B6036F25CB687B00960F5B /* ShakespeareAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B6036E25CB687B00960F5B /* ShakespeareAPIClient.swift */; };
+		47B6037425CB692700960F5B /* ShakespeareDescriptionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B6037325CB692700960F5B /* ShakespeareDescriptionResponse.swift */; };
+		47B6037925CB697600960F5B /* Contents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B6037825CB697600960F5B /* Contents.swift */; };
+		47B6037E25CB6A3900960F5B /* ShakespeareAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B6037D25CB6A3900960F5B /* ShakespeareAPIClientTests.swift */; };
 		47DF036C25CA102900DBBD2C /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF036B25CA102900DBBD2C /* APIConfiguration.swift */; };
 		47DF037125CA105200DBBD2C /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF037025CA105200DBBD2C /* NetworkClient.swift */; };
 		47DF037625CA10A000DBBD2C /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DF037525CA10A000DBBD2C /* NetworkConstants.swift */; };
@@ -66,6 +72,12 @@
 		47B6035125CB597F00960F5B /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		47B6035625CB598700960F5B /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
 		47B6035B25CB601C00960F5B /* Sprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sprite.swift; sourceTree = "<group>"; };
+		47B6036025CB658F00960F5B /* ShakespeareAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakespeareAPI.swift; sourceTree = "<group>"; };
+		47B6036625CB663100960F5B /* ShakespeareAPIDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakespeareAPIDescriptor.swift; sourceTree = "<group>"; };
+		47B6036E25CB687B00960F5B /* ShakespeareAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakespeareAPIClient.swift; sourceTree = "<group>"; };
+		47B6037325CB692700960F5B /* ShakespeareDescriptionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakespeareDescriptionResponse.swift; sourceTree = "<group>"; };
+		47B6037825CB697600960F5B /* Contents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contents.swift; sourceTree = "<group>"; };
+		47B6037D25CB6A3900960F5B /* ShakespeareAPIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakespeareAPIClientTests.swift; sourceTree = "<group>"; };
 		47DF036B25CA102900DBBD2C /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
 		47DF037025CA105200DBBD2C /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		47DF037525CA10A000DBBD2C /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
@@ -161,6 +173,7 @@
 			children = (
 				475A735125C9F97F0044DA35 /* Info.plist */,
 				47B6033025CB546300960F5B /* PokemonInfoAPIClientTests.swift */,
+				47B6037D25CB6A3900960F5B /* ShakespeareAPIClientTests.swift */,
 			);
 			path = "Pokespeare-sdk-tests";
 			sourceTree = "<group>";
@@ -182,6 +195,7 @@
 		47B6031425CB280400960F5B /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				47B6036525CB660600960F5B /* ShakespeareAPI */,
 				47B6034B25CB589600960F5B /* PokemonInfoAPI */,
 			);
 			path = Entities;
@@ -191,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				47B6031B25CB4E2F00960F5B /* PokemonInfoAPIClient.swift */,
+				47B6036E25CB687B00960F5B /* ShakespeareAPIClient.swift */,
 			);
 			path = Clients;
 			sourceTree = "<group>";
@@ -207,6 +222,16 @@
 				47B6035B25CB601C00960F5B /* Sprite.swift */,
 			);
 			path = PokemonInfoAPI;
+			sourceTree = "<group>";
+		};
+		47B6036525CB660600960F5B /* ShakespeareAPI */ = {
+			isa = PBXGroup;
+			children = (
+				47B6036625CB663100960F5B /* ShakespeareAPIDescriptor.swift */,
+				47B6037325CB692700960F5B /* ShakespeareDescriptionResponse.swift */,
+				47B6037825CB697600960F5B /* Contents.swift */,
+			);
+			path = ShakespeareAPI;
 			sourceTree = "<group>";
 		};
 		47DF036A25CA0FEA00DBBD2C /* Network */ = {
@@ -226,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				47DF037B25CA12DF00DBBD2C /* PokemonInfoAPI.swift */,
+				47B6036025CB658F00960F5B /* ShakespeareAPI.swift */,
 			);
 			path = APIs;
 			sourceTree = "<group>";
@@ -489,17 +515,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47B6036725CB663100960F5B /* ShakespeareAPIDescriptor.swift in Sources */,
 				47B6034D25CB58D400960F5B /* FlavorTextEntry.swift in Sources */,
 				47B6035225CB597F00960F5B /* Language.swift in Sources */,
 				47B6031625CB282200960F5B /* PokemonInfoAPIDescriptor.swift in Sources */,
 				47DF037625CA10A000DBBD2C /* NetworkConstants.swift in Sources */,
+				47B6036F25CB687B00960F5B /* ShakespeareAPIClient.swift in Sources */,
 				47B6032C25CB52DD00960F5B /* PokemonInfoSpritesResponse.swift in Sources */,
 				47B6032425CB4EEF00960F5B /* PokemonInfoDescriptionResponse.swift in Sources */,
 				47DF036C25CA102900DBBD2C /* APIConfiguration.swift in Sources */,
+				47B6037925CB697600960F5B /* Contents.swift in Sources */,
 				47DF037C25CA12DF00DBBD2C /* PokemonInfoAPI.swift in Sources */,
 				47DF037125CA105200DBBD2C /* NetworkClient.swift in Sources */,
+				47B6036125CB658F00960F5B /* ShakespeareAPI.swift in Sources */,
 				47B6031C25CB4E2F00960F5B /* PokemonInfoAPIClient.swift in Sources */,
 				47B6035C25CB601C00960F5B /* Sprite.swift in Sources */,
+				47B6037425CB692700960F5B /* ShakespeareDescriptionResponse.swift in Sources */,
 				47B6035725CB598700960F5B /* Version.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,6 +539,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47B6037E25CB6A3900960F5B /* ShakespeareAPIClientTests.swift in Sources */,
 				47B6033125CB546300960F5B /* PokemonInfoAPIClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

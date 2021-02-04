@@ -8,7 +8,8 @@
 import Alamofire
 
 struct NetworkConstants {
-    static var basePokemonAPIUrlString = "https://pokeapi.co/api/v2/"
+    static var pokemonAPIBaseUrlString = "https://pokeapi.co/api/v2/"
+    static var shakespeareAPIBaseUrlString = "https://api.funtranslations.com/translate/"
 }
 
 enum HTTPHeaderField: String {
@@ -32,6 +33,7 @@ enum APIError: Error {
     case forbidden              //Status code 403
     case notFound               //Status code 404
     case conflict               //Status code 409
+    case tooManyRequests        //Status code 429
     case internalServerError    //Status code 500
     case unknown                //Unknown
     case badUrl
