@@ -1,16 +1,37 @@
 PODS:
+  - Alamofire (5.3.0)
   - Pokespeare-sdk (0.0.1)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
 
 DEPENDENCIES:
+  - Alamofire
   - Pokespeare-sdk (from `.`)
+  - RxCocoa
+  - RxSwift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - RxCocoa
+    - RxRelay
+    - RxSwift
 
 EXTERNAL SOURCES:
   Pokespeare-sdk:
     :path: "."
 
 SPEC CHECKSUMS:
+  Alamofire: 2c792affbdc2f18016e08fdbcacd60aebe1ba593
   Pokespeare-sdk: 651ecef1b1a43e13688072b809b0f0080c3d7ef3
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
 
-PODFILE CHECKSUM: 1c41a1c4e2f2a2bf0aefb435d8979ec9ed49148b
+PODFILE CHECKSUM: 4735b4229c2ea6d931f57339d310dce57e91af4d
 
 COCOAPODS: 1.10.1

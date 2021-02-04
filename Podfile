@@ -1,11 +1,13 @@
+platform :ios, '14.0'
 use_frameworks!
 
 target 'Pokespeare-sdk' do
-  # Pods for Pokespeare-sdk
-
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'Alamofire'
 end
 
-target 'Pokespeare-sdkTests' do
+target 'Pokespeare-sdk-tests' do
   # Pods for testing
 end
 
