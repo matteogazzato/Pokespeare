@@ -60,6 +60,5 @@ enum PokemonInfoAPI: APIConfiguration {
         }()
         
         return try encoding.encode(urlRequest, with: parameters)
-        
     }
 }
