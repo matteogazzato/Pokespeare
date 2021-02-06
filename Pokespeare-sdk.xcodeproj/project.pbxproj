@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		470679D925CCB35D00071A2E /* PokespeareError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470679D825CCB35D00071A2E /* PokespeareError.swift */; };
+		47067A1D25CCB8E600071A2E /* PokespeareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47067A1C25CCB8E600071A2E /* PokespeareTests.swift */; };
+		4716B0D925CCAC55008835E9 /* Pokespeare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716B0D825CCAC55008835E9 /* Pokespeare.swift */; };
+		4716B0DE25CCB01E008835E9 /* PokespeareHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716B0DD25CCB01E008835E9 /* PokespeareHelpers.swift */; };
 		475A734B25C9F97F0044DA35 /* Pokespeare_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 475A734125C9F97F0044DA35 /* Pokespeare_sdk.framework */; };
 		475A736425C9FAE60044DA35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475A736325C9FAE60044DA35 /* AppDelegate.swift */; };
 		475A736625C9FAE60044DA35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475A736525C9FAE60044DA35 /* SceneDelegate.swift */; };
@@ -51,6 +55,10 @@
 /* Begin PBXFileReference section */
 		0E9B3E2AE6DD2ED014338787 /* Pods_Pokespeare_sdk_examples.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pokespeare_sdk_examples.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9A34F38B92A24879B32A20 /* Pods-Pokespeare-sdkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokespeare-sdkTests.debug.xcconfig"; path = "Target Support Files/Pods-Pokespeare-sdkTests/Pods-Pokespeare-sdkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		470679D825CCB35D00071A2E /* PokespeareError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokespeareError.swift; sourceTree = "<group>"; };
+		47067A1C25CCB8E600071A2E /* PokespeareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokespeareTests.swift; sourceTree = "<group>"; };
+		4716B0D825CCAC55008835E9 /* Pokespeare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokespeare.swift; sourceTree = "<group>"; };
+		4716B0DD25CCB01E008835E9 /* PokespeareHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokespeareHelpers.swift; sourceTree = "<group>"; };
 		475A734125C9F97F0044DA35 /* Pokespeare_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pokespeare_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		475A734525C9F97F0044DA35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		475A734A25C9F97F0044DA35 /* Pokespeare-sdk-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pokespeare-sdk-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +145,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		470679D725CCB34900071A2E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				470679D825CCB35D00071A2E /* PokespeareError.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		475A733725C9F97F0044DA35 = {
 			isa = PBXGroup;
 			children = (
@@ -162,8 +178,11 @@
 		475A734325C9F97F0044DA35 /* Pokespeare-sdk */ = {
 			isa = PBXGroup;
 			children = (
+				470679D725CCB34900071A2E /* Entities */,
 				47DF036A25CA0FEA00DBBD2C /* Network */,
 				475A734525C9F97F0044DA35 /* Info.plist */,
+				4716B0D825CCAC55008835E9 /* Pokespeare.swift */,
+				4716B0DD25CCB01E008835E9 /* PokespeareHelpers.swift */,
 			);
 			path = "Pokespeare-sdk";
 			sourceTree = "<group>";
@@ -174,6 +193,7 @@
 				475A735125C9F97F0044DA35 /* Info.plist */,
 				47B6033025CB546300960F5B /* PokemonInfoAPIClientTests.swift */,
 				47B6037D25CB6A3900960F5B /* ShakespeareAPIClientTests.swift */,
+				47067A1C25CCB8E600071A2E /* PokespeareTests.swift */,
 			);
 			path = "Pokespeare-sdk-tests";
 			sourceTree = "<group>";
@@ -520,6 +540,7 @@
 				47B6035225CB597F00960F5B /* Language.swift in Sources */,
 				47B6031625CB282200960F5B /* PokemonInfoAPIDescriptor.swift in Sources */,
 				47DF037625CA10A000DBBD2C /* NetworkConstants.swift in Sources */,
+				470679D925CCB35D00071A2E /* PokespeareError.swift in Sources */,
 				47B6036F25CB687B00960F5B /* ShakespeareAPIClient.swift in Sources */,
 				47B6032C25CB52DD00960F5B /* PokemonInfoSpritesResponse.swift in Sources */,
 				47B6032425CB4EEF00960F5B /* PokemonInfoDescriptionResponse.swift in Sources */,
@@ -527,9 +548,11 @@
 				47B6037925CB697600960F5B /* Contents.swift in Sources */,
 				47DF037C25CA12DF00DBBD2C /* PokemonInfoAPI.swift in Sources */,
 				47DF037125CA105200DBBD2C /* NetworkClient.swift in Sources */,
+				4716B0D925CCAC55008835E9 /* Pokespeare.swift in Sources */,
 				47B6036125CB658F00960F5B /* ShakespeareAPI.swift in Sources */,
 				47B6031C25CB4E2F00960F5B /* PokemonInfoAPIClient.swift in Sources */,
 				47B6035C25CB601C00960F5B /* Sprite.swift in Sources */,
+				4716B0DE25CCB01E008835E9 /* PokespeareHelpers.swift in Sources */,
 				47B6037425CB692700960F5B /* ShakespeareDescriptionResponse.swift in Sources */,
 				47B6035725CB598700960F5B /* Version.swift in Sources */,
 			);
@@ -541,6 +564,7 @@
 			files = (
 				47B6037E25CB6A3900960F5B /* ShakespeareAPIClientTests.swift in Sources */,
 				47B6033125CB546300960F5B /* PokemonInfoAPIClientTests.swift in Sources */,
+				47067A1D25CCB8E600071A2E /* PokespeareTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

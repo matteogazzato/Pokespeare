@@ -12,7 +12,7 @@ import RxCocoa
 
 class PokemonInfoAPIClientTests: XCTestCase {
     
-    let disposeBag = DisposeBag()
+    let bag = DisposeBag()
 
     func testPokemonDescriptions() {
         let desc = PokemonInfoAPIDescriptor(name: "charizard")
@@ -24,7 +24,7 @@ class PokemonInfoAPIClientTests: XCTestCase {
             } onError: { error in
                 XCTFail()
             }
-            .disposed(by: disposeBag)
+            .disposed(by: bag)
         wait(for: [descriptionExpectation], timeout: 10.0)
     }
     
@@ -33,12 +33,12 @@ class PokemonInfoAPIClientTests: XCTestCase {
         let spritesExpectation = expectation(description: "Sprites received")
         PokemonInfoAPIClient.pokemonSprites(fromDescriptor: desc)
             .subscribe { response in
-                XCTAssertNotNil(URL(string: response.sprites.frontDefault))
+                XCTAssertNotNil(response.sprites.frontDefault)
                 spritesExpectation.fulfill()
             } onError: { _ in
                 XCTFail()
             }
-            .disposed(by: disposeBag)
+            .disposed(by: bag)
         wait(for: [spritesExpectation], timeout: 10.0)
     }
 }
