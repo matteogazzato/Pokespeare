@@ -30,23 +30,16 @@ public class Pokespeare {
     public func retrieveDescription(ofPokemon pokemonName: String, completion: @escaping (_ description: String?, _ error: Error?) -> Void) {
         let pokemonInfodesc = PokemonInfoAPIDescriptor(name: pokemonName)
         PokemonInfoAPIClient.pokemonDescriptions(fromDescriptor: pokemonInfodesc)
-            .subscribe { response in
-                guard let description = PokespeareHelpers.filter(flavorTextEntries: response.flavorTextEntries,
-                                                                 forVersion: self.version) else {
-                    completion(nil, PokespeareError(.missingDescription(pokemonName, self.version.rawValue)))
-                    return
-                }
+            .flatMap { pokemonResponse -> Observable<ShakespeareDescriptionResponse> in
+                guard let description = PokespeareHelpers.filter(flavorTextEntries: pokemonResponse.flavorTextEntries,
+                                                                                 forVersion: self.version) else {
+                    throw PokespeareError(.missingDescription(pokemonName, self.version.rawValue))
+                                }
                 let shakespeareDesc = ShakespeareAPIDescriptor(textToTranslate: description)
-                ShakespeareAPIClient.shakespeareanDescription(fromDesc: shakespeareDesc)
-                    .subscribe { response in
-                        completion(response.contents.translated, nil)
-                    } onError: { error in
-                        NSLog(error.localizedDescription)
-                        completion(nil, error)
-                    }
-                    .disposed(by: self.bag)
+                return ShakespeareAPIClient.shakespeareanDescription(fromDesc: shakespeareDesc)
+            }.subscribe { shakespeareDescriptionResponse in
+                completion(shakespeareDescriptionResponse.contents.translated, nil)
             } onError: { error in
-                NSLog(error.localizedDescription)
                 completion(nil, error)
             }
             .disposed(by: bag)

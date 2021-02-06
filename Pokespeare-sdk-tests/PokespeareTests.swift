@@ -12,11 +12,14 @@ class PokespeareTests: XCTestCase {
 
     func testRetrieveDescription() throws {
         let name = "charizard"
+        let descriptionExpectation = expectation(description: "Description received")
         Pokespeare().retrieveDescription(ofPokemon: name) { (description, error) in
             XCTAssertNil(error)
-            let expectedTranslation = "At which hour the bulb on its back grows large,  \'t appears\\fto loseth the ability to standeth on its hind forks"
+            let expectedTranslation = "Spits fire yond is hot enow to melt boulders. Known to cause forest fires unintentionally."
             XCTAssertEqual(description!, expectedTranslation)
+            descriptionExpectation.fulfill()
         }
+        wait(for: [descriptionExpectation], timeout: 20.0)
     }
 
 }
