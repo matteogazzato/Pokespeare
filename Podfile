@@ -5,6 +5,7 @@ target 'Pokespeare-sdk' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'Alamofire'
+  pod 'Kingfisher', '~> 6.0'
 end
 
 target 'Pokespeare-sdk-tests' do

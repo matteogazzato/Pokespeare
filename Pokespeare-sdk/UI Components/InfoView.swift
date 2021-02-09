@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class InfoView: CustomView {
 
@@ -20,5 +21,6 @@ extension InfoView {
     public func updateUI(withDescriptor desc: InfoViewDescriptor) {
         nameLabel?.text = desc.name
         descriptionTextView?.text = desc.description
+        spriteImageView.kf.setImage(with: URL(string: desc.sprite))
     }
 }
