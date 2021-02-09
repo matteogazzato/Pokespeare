@@ -168,11 +168,9 @@
 		4755F63525CF3F6D00264F37 /* UI Components */ = {
 			isa = PBXGroup;
 			children = (
-				47B0241225D2F348003E537D /* InfoView.swift */,
-				47B0241725D2F366003E537D /* InfoView.xib */,
-				47B0241C25D30B66003E537D /* CustomView.swift */,
-				47B0242125D30BB7003E537D /* UIViewExtensions.swift */,
-				47B0242625D30CA7003E537D /* InfoViewDescriptor.swift */,
+				47CBC52425D343BC007240C3 /* InfoView */,
+				47CBC52325D343AA007240C3 /* Extensions */,
+				47CBC52225D3439A007240C3 /* Utils */,
 			);
 			path = "UI Components";
 			sourceTree = "<group>";
@@ -278,6 +276,32 @@
 				47B6037825CB697600960F5B /* Contents.swift */,
 			);
 			path = ShakespeareAPI;
+			sourceTree = "<group>";
+		};
+		47CBC52225D3439A007240C3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				47B0241C25D30B66003E537D /* CustomView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		47CBC52325D343AA007240C3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				47B0242125D30BB7003E537D /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		47CBC52425D343BC007240C3 /* InfoView */ = {
+			isa = PBXGroup;
+			children = (
+				47B0241225D2F348003E537D /* InfoView.swift */,
+				47B0241725D2F366003E537D /* InfoView.xib */,
+				47B0242625D30CA7003E537D /* InfoViewDescriptor.swift */,
+			);
+			path = InfoView;
 			sourceTree = "<group>";
 		};
 		47DF036A25CA0FEA00DBBD2C /* Network */ = {
