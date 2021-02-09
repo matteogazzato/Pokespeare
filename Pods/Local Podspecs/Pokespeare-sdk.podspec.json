@@ -24,5 +24,16 @@
     "Pokespeare-sdkTests/**",
     "Pokespeare-sdl-examples"
   ],
+  "dependencies": {
+    "Alamofire": [
+
+    ],
+    "RxSwift": [
+
+    ],
+    "RxCocoa": [
+
+    ]
+  },
   "swift_version": "5.0"
 }

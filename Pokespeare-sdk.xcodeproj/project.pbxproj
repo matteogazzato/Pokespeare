@@ -18,6 +18,11 @@
 		475A736B25C9FAE60044DA35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475A736925C9FAE60044DA35 /* Main.storyboard */; };
 		475A736D25C9FAE80044DA35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 475A736C25C9FAE80044DA35 /* Assets.xcassets */; };
 		475A737025C9FAE80044DA35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475A736E25C9FAE80044DA35 /* LaunchScreen.storyboard */; };
+		47B0241325D2F348003E537D /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B0241225D2F348003E537D /* InfoView.swift */; };
+		47B0241825D2F366003E537D /* InfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47B0241725D2F366003E537D /* InfoView.xib */; };
+		47B0241D25D30B66003E537D /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B0241C25D30B66003E537D /* CustomView.swift */; };
+		47B0242225D30BB7003E537D /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B0242125D30BB7003E537D /* UIViewExtensions.swift */; };
+		47B0242725D30CA7003E537D /* InfoViewDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B0242625D30CA7003E537D /* InfoViewDescriptor.swift */; };
 		47B6031625CB282200960F5B /* PokemonInfoAPIDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B6031525CB282200960F5B /* PokemonInfoAPIDescriptor.swift */; };
 		47B6031C25CB4E2F00960F5B /* PokemonInfoAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B6031B25CB4E2F00960F5B /* PokemonInfoAPIClient.swift */; };
 		47B6032425CB4EEF00960F5B /* PokemonInfoDescriptionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B6032325CB4EEF00960F5B /* PokemonInfoDescriptionResponse.swift */; };
@@ -71,6 +76,11 @@
 		475A736C25C9FAE80044DA35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		475A736F25C9FAE80044DA35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		475A737125C9FAE80044DA35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47B0241225D2F348003E537D /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		47B0241725D2F366003E537D /* InfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoView.xib; sourceTree = "<group>"; };
+		47B0241C25D30B66003E537D /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		47B0242125D30BB7003E537D /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		47B0242625D30CA7003E537D /* InfoViewDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewDescriptor.swift; sourceTree = "<group>"; };
 		47B6031525CB282200960F5B /* PokemonInfoAPIDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoAPIDescriptor.swift; sourceTree = "<group>"; };
 		47B6031B25CB4E2F00960F5B /* PokemonInfoAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoAPIClient.swift; sourceTree = "<group>"; };
 		47B6032325CB4EEF00960F5B /* PokemonInfoDescriptionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoDescriptionResponse.swift; sourceTree = "<group>"; };
@@ -153,6 +163,18 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		4755F63525CF3F6D00264F37 /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				47B0241225D2F348003E537D /* InfoView.swift */,
+				47B0241725D2F366003E537D /* InfoView.xib */,
+				47B0241C25D30B66003E537D /* CustomView.swift */,
+				47B0242125D30BB7003E537D /* UIViewExtensions.swift */,
+				47B0242625D30CA7003E537D /* InfoViewDescriptor.swift */,
+			);
+			path = "UI Components";
+			sourceTree = "<group>";
+		};
 		475A733725C9F97F0044DA35 = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +200,7 @@
 		475A734325C9F97F0044DA35 /* Pokespeare-sdk */ = {
 			isa = PBXGroup;
 			children = (
+				4755F63525CF3F6D00264F37 /* UI Components */,
 				470679D725CCB34900071A2E /* Entities */,
 				47DF036A25CA0FEA00DBBD2C /* Network */,
 				475A734525C9F97F0044DA35 /* Info.plist */,
@@ -347,6 +370,7 @@
 				475A735D25C9FAE60044DA35 /* Sources */,
 				475A735E25C9FAE60044DA35 /* Frameworks */,
 				475A735F25C9FAE60044DA35 /* Resources */,
+				D78D2FF274DE2429678AE512 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -404,6 +428,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47B0241825D2F366003E537D /* InfoView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +553,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D78D2FF274DE2429678AE512 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pokespeare-sdk-examples/Pods-Pokespeare-sdk-examples-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pokespeare-sdk-examples/Pods-Pokespeare-sdk-examples-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pokespeare-sdk-examples/Pods-Pokespeare-sdk-examples-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -536,6 +578,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47B6036725CB663100960F5B /* ShakespeareAPIDescriptor.swift in Sources */,
+				47B0242725D30CA7003E537D /* InfoViewDescriptor.swift in Sources */,
 				47B6034D25CB58D400960F5B /* FlavorTextEntry.swift in Sources */,
 				47B6035225CB597F00960F5B /* Language.swift in Sources */,
 				47B6031625CB282200960F5B /* PokemonInfoAPIDescriptor.swift in Sources */,
@@ -543,10 +586,13 @@
 				470679D925CCB35D00071A2E /* PokespeareError.swift in Sources */,
 				47B6036F25CB687B00960F5B /* ShakespeareAPIClient.swift in Sources */,
 				47B6032C25CB52DD00960F5B /* PokemonInfoSpritesResponse.swift in Sources */,
+				47B0241D25D30B66003E537D /* CustomView.swift in Sources */,
 				47B6032425CB4EEF00960F5B /* PokemonInfoDescriptionResponse.swift in Sources */,
+				47B0242225D30BB7003E537D /* UIViewExtensions.swift in Sources */,
 				47DF036C25CA102900DBBD2C /* APIConfiguration.swift in Sources */,
 				47B6037925CB697600960F5B /* Contents.swift in Sources */,
 				47DF037C25CA12DF00DBBD2C /* PokemonInfoAPI.swift in Sources */,
+				47B0241325D2F348003E537D /* InfoView.swift in Sources */,
 				47DF037125CA105200DBBD2C /* NetworkClient.swift in Sources */,
 				4716B0D925CCAC55008835E9 /* Pokespeare.swift in Sources */,
 				47B6036125CB658F00960F5B /* ShakespeareAPI.swift in Sources */,
