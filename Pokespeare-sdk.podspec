@@ -137,5 +137,6 @@ Pod::Spec.new do |spec|
   spec.dependency "Alamofire"
   spec.dependency "RxSwift"
   spec.dependency "RxCocoa"
+  spec.dependency "Kingfisher"
 
 end

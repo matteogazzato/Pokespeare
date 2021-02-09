@@ -7,10 +7,10 @@
 
 import UIKit
 
-/// Loadable UIView subclass (BTCCustomView should be always subclassed)
-class CustomView: UIView {
+/// Loadable UIView subclass (CustomView should be always subclassed)
+public class CustomView: UIView {
 
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         xibSetup()
         setupUI()

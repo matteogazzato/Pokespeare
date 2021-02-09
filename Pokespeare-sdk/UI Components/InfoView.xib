@@ -44,6 +44,9 @@
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         </textView>
                     </subviews>
+                    <constraints>
+                        <constraint firstItem="EtO-rU-5P7" firstAttribute="width" secondItem="pv2-yu-xjC" secondAttribute="width" multiplier="0.903382" id="ksH-qC-Tbr"/>
+                    </constraints>
                 </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

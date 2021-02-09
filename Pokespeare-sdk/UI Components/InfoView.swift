@@ -8,12 +8,17 @@
 import UIKit
 import Kingfisher
 
-class InfoView: CustomView {
+public class InfoView: CustomView {
 
     @IBOutlet weak var spriteImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionTextView: UITextView!
     
+    
+    override public func setupUI() {
+        self.descriptionTextView.textColor = .black
+        self.backgroundColor = .red
+    }
 }
 
 // MARK: - External Utils
