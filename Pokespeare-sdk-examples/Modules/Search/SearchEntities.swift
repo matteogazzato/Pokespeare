@@ -20,6 +20,8 @@ struct SearchError: Error {
             errorMessage = "Unable to retrieve description"
         case .noSprite:
             errorMessage = "Unable to retrieve sprite"
+        case .tooManyRequests:
+            errorMessage = "Description requests limit reached, please try later"
         }
         message = errorMessage
     }
@@ -29,12 +31,6 @@ enum SearchErrorType {
     case emptySearch
     case noDescription
     case noSprite
-}
-
-// MARK: - Search Result
-struct SearchResult {
-    var name: String = ""
-    var description: String = ""
-    var sprite: String = ""
+    case tooManyRequests
 }
 

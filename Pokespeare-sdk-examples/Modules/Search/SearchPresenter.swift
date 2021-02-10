@@ -33,7 +33,8 @@ class SearchPresenter: SearchDataProvider {
 // MARK: - SearchEventHandler
 extension SearchPresenter: SearchEventHandler {
     func onSearch(_ name: String?) {
-        guard let name = name else {
+        guard let name = name,
+              !name.isEmpty else {
             view?.showError(withMessage: SearchError(.emptySearch).message)
             return
         }
@@ -56,7 +57,10 @@ extension SearchPresenter: SearchInteractorOutput {
         view?.showError(withMessage: error.message)
     }
     
-    func handle(searchResult result: SearchResult) {
-        // TODO: Handle result
+    func handle(searchResult result: Pokemon) {
+        let pokemonInfoVc = PokemonInfoWireframe().module()
+        pokemonInfoVc.dataProvider?.pokemon = result
+        guard let vc = self.view as? SearchViewController else { return }
+        wireframe.present(pokemonInfoViewController: pokemonInfoVc, fromViewController: vc)
     }
 }

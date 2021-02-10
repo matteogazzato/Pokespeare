@@ -40,9 +40,10 @@ class PokemonInfoViewController: UIViewController {
 
 extension PokemonInfoViewController: PokemonInfoViewProtocol {
     func updateUI() {
-        guard let desc = dataProvider?.descriptor else { return }
+        guard let desc = dataProvider?.pokemon else { return }
+        let infoDesc = InfoViewDescriptor(description: desc.description, name: desc.name, sprite: desc.sprite)
         let infoView = InfoView(frame: containerView.frame)
-        infoView.updateUI(withDescriptor: desc)
+        infoView.updateUI(withDescriptor: infoDesc)
         containerView.addSubview(infoView)
     }
 }

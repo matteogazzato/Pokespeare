@@ -13,7 +13,7 @@ class SearchInteractor {
 	fileprivate let networkManager: SearchNetworkManagerProtocol
     weak var output: SearchInteractorOutput?
     
-    private var searchResult = SearchResult()
+    private var pokemonSearchResult = Pokemon()
 
     init(networkManager: SearchNetworkManagerProtocol = SearchNetworkManager()){
         self.networkManager = networkManager
@@ -22,40 +22,38 @@ class SearchInteractor {
 
 extension SearchInteractor: SearchInteractorProtocol {
     func search(pokemonWithName name: String) {
-        searchResult.name = name
-        networkManager.fetchDescription(forPokemonWithName: searchResult.name) { [weak self] (description, error) in
+        pokemonSearchResult.name = name
+        networkManager.fetchDescription(forPokemonWithName: pokemonSearchResult.name) { [weak self] (description, error) in
             guard let self = self else { return }
             if let error = error {
                 NSLog(error.localizedDescription)
-                self.output?.handle(searchError: SearchError(.noDescription))
+                self.output?.handle(searchError: error)
             } else {
                 guard let description = description else {
                     self.output?.handle(searchError: SearchError(.noDescription))
                     return
                 }
-                self.searchResult.description = description
+                self.pokemonSearchResult.description = description
                 self.fetchSprite()
             }
         }
-        
     }
 }
 
 // MARK: - Internal Utils
 extension SearchInteractor {
     private func fetchSprite() {
-        networkManager.fetchSprite(forPokemonWithName: searchResult.name) { [weak self] (sprite, error) in
+        networkManager.fetchSprite(forPokemonWithName: pokemonSearchResult.name) { [weak self] (sprite, error) in
             guard let self = self else { return }
             if let error = error {
-                NSLog(error.localizedDescription)
-                self.output?.handle(searchError: SearchError(.noSprite))
+                self.output?.handle(searchError: error)
             } else {
                 guard let sprite = sprite else {
                     self.output?.handle(searchError: SearchError(.noSprite))
                     return
                 }
-                self.searchResult.sprite = sprite
-                self.output?.handle(searchResult: self.searchResult)
+                self.pokemonSearchResult.sprite = sprite
+                self.output?.handle(searchResult: self.pokemonSearchResult)
             }
         }
     }

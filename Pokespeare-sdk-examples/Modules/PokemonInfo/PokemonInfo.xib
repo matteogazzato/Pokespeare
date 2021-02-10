@@ -19,16 +19,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AwN-yc-HEy">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="30" y="30" width="315" height="607"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="AwN-yc-HEy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4SE-72-QJd"/>
-                <constraint firstItem="AwN-yc-HEy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8II-Ja-dCF"/>
-                <constraint firstAttribute="bottom" secondItem="AwN-yc-HEy" secondAttribute="bottom" id="U0E-vi-XMQ"/>
-                <constraint firstAttribute="trailing" secondItem="AwN-yc-HEy" secondAttribute="trailing" id="rAw-qe-OW1"/>
+                <constraint firstItem="AwN-yc-HEy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="4SE-72-QJd"/>
+                <constraint firstItem="AwN-yc-HEy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="8II-Ja-dCF"/>
+                <constraint firstAttribute="bottom" secondItem="AwN-yc-HEy" secondAttribute="bottom" constant="30" id="U0E-vi-XMQ"/>
+                <constraint firstAttribute="trailing" secondItem="AwN-yc-HEy" secondAttribute="trailing" constant="30" id="rAw-qe-OW1"/>
             </constraints>
             <point key="canvasLocation" x="138" y="154"/>
         </view>

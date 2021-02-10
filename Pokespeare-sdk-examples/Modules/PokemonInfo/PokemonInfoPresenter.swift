@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Pokespeare_sdk
 
 class PokemonInfoPresenter: PokemonInfoDataProvider {
 
@@ -24,7 +23,7 @@ class PokemonInfoPresenter: PokemonInfoDataProvider {
     }
     
     // MARK: - PokemonInfoDataProvider
-    var descriptor: InfoViewDescriptor?
+    var pokemon: Pokemon = Pokemon()
     
     // MARK: - Internal Utils
     // All internal methods not defined in any protocol
@@ -34,8 +33,7 @@ class PokemonInfoPresenter: PokemonInfoDataProvider {
 // MARK: - PokemonInfoEventHandler
 extension PokemonInfoPresenter: PokemonInfoEventHandler {
     func onViewDidLoad() {
-        
-    
+        view?.updateUI()
     }
     
     func onDismiss() {

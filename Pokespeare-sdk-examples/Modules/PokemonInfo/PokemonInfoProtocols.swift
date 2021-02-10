@@ -7,8 +7,6 @@
 //
 
 import Foundation
-import Pokespeare_sdk
-
 
 protocol PokemonInfoViewProtocol: AnyObject {
 	func updateUI()
@@ -29,7 +27,7 @@ protocol PokemonInfoEventHandler: AnyObject {
 }
 
 protocol PokemonInfoDataProvider: AnyObject {
-    var descriptor: InfoViewDescriptor? { get set }
+    var pokemon: Pokemon { get set }
 }
 
 protocol PokemonInfoInteractorOutput: AnyObject {

@@ -48,6 +48,8 @@ extension SearchViewController: SearchViewProtocol {
         let alert = UIAlertController(title: "Warning",
                                       message: message,
                                       preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alert.addAction(okAction)
         present(alert, animated: true, completion: nil)
     }
 }

@@ -29,4 +29,8 @@ extension SearchWireframe: SearchWireframeProtocol {
     func dismiss(_ view: SearchViewProtocol) {
         // Add custom implementation to dismiss viewController
     }
+    
+    func present(pokemonInfoViewController pokemonInfoVc: PokemonInfoViewController, fromViewController vc: UIViewController) {
+        vc.present(pokemonInfoVc, animated: true, completion: nil)
+    }
 }

@@ -21,6 +21,7 @@ protocol SearchInteractorProtocol: AnyObject {
 protocol SearchWireframeProtocol: AnyObject {
 	func module() -> SearchViewController
     func dismiss(_ vc: SearchViewProtocol)
+    func present(pokemonInfoViewController pokemonInfoVc: PokemonInfoViewController, fromViewController vc: UIViewController)
 }
 
 protocol SearchEventHandler: AnyObject {
@@ -36,7 +37,7 @@ protocol SearchDataProvider: AnyObject {
 
 protocol SearchInteractorOutput: AnyObject {
     func handle(searchError error: SearchError)
-    func handle(searchResult result: SearchResult)
+    func handle(searchResult result: Pokemon)
 }
 
 protocol SearchDelegate: AnyObject {
@@ -44,6 +45,6 @@ protocol SearchDelegate: AnyObject {
 }
 
 protocol SearchNetworkManagerProtocol: AnyObject {
-    func fetchDescription(forPokemonWithName name: String, completion: @escaping (_ description: String?, _ error: Error?) -> Void)
-    func fetchSprite(forPokemonWithName name: String, completion: @escaping (_ description: String?, _ error: Error?) -> Void)
+    func fetchDescription(forPokemonWithName name: String, completion: @escaping (_ description: String?, _ error: SearchError?) -> Void)
+    func fetchSprite(forPokemonWithName name: String, completion: @escaping (_ description: String?, _ error: SearchError?) -> Void)
 }
