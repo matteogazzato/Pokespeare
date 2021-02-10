@@ -37,7 +37,7 @@ extension SearchPresenter: SearchEventHandler {
             view?.showError(withMessage: SearchError(.emptySearch).message)
             return
         }
-        // TODO: handle search
+        interactor.search(pokemonWithName: name)
     }
     
     func onViewDidLoad() {
@@ -52,5 +52,11 @@ extension SearchPresenter: SearchEventHandler {
 
 // MARK: - SearchInteractorOutput
 extension SearchPresenter: SearchInteractorOutput {
-    // Add SearchInteractorOutput implementation
+    func handle(searchError error: SearchError) {
+        view?.showError(withMessage: error.message)
+    }
+    
+    func handle(searchResult result: SearchResult) {
+        // TODO: Handle result
+    }
 }

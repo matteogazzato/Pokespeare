@@ -15,7 +15,7 @@ protocol SearchViewProtocol: AnyObject {
 }
 
 protocol SearchInteractorProtocol: AnyObject {
-    // Add SearchInteractorProtocol definition
+    func search(pokemonWithName name: String)
 }
 
 protocol SearchWireframeProtocol: AnyObject {
@@ -35,7 +35,8 @@ protocol SearchDataProvider: AnyObject {
 }
 
 protocol SearchInteractorOutput: AnyObject {
-    // Add SearchInteractorOutput definition
+    func handle(searchError error: SearchError)
+    func handle(searchResult result: SearchResult)
 }
 
 protocol SearchDelegate: AnyObject {
@@ -43,5 +44,6 @@ protocol SearchDelegate: AnyObject {
 }
 
 protocol SearchNetworkManagerProtocol: AnyObject {
-    // Add SearchNetworkManagerProtocol definition
+    func fetchDescription(forPokemonWithName name: String, completion: @escaping (_ description: String?, _ error: Error?) -> Void)
+    func fetchSprite(forPokemonWithName name: String, completion: @escaping (_ description: String?, _ error: Error?) -> Void)
 }

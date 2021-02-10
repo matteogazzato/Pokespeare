@@ -8,6 +8,7 @@
 
 import Foundation
 
+// MARK: - Search Error
 struct SearchError: Error {
     var message: String
     init(_ errorType: SearchErrorType) {
@@ -15,7 +16,10 @@ struct SearchError: Error {
         switch errorType {
         case .emptySearch:
             errorMessage = "Empty search, please type a Pokemon name"
-        
+        case .noDescription:
+            errorMessage = "Unable to retrieve description"
+        case .noSprite:
+            errorMessage = "Unable to retrieve sprite"
         }
         message = errorMessage
     }
@@ -23,5 +27,14 @@ struct SearchError: Error {
 
 enum SearchErrorType {
     case emptySearch
+    case noDescription
+    case noSprite
+}
+
+// MARK: - Search Result
+struct SearchResult {
+    var name: String = ""
+    var description: String = ""
+    var sprite: String = ""
 }
 

@@ -7,7 +7,21 @@
 //
 
 import Foundation
+import Pokespeare_sdk
 
 class SearchNetworkManager: SearchNetworkManagerProtocol {
-    // Add variables and methods to retrieve data
+    
+    private let pokespeare = Pokespeare()
+    
+    func fetchDescription(forPokemonWithName name: String, completion: @escaping (String?, Error?) -> Void) {
+        pokespeare.retrieveDescription(ofPokemon: name) { (description, error) in
+            completion(description, error)
+        }
+    }
+    
+    func fetchSprite(forPokemonWithName name: String, completion: @escaping (String?, Error?) -> Void) {
+        pokespeare.retrieveSprite(ofPokemon: name) { (sprite, error) in
+            completion(sprite, error)
+        }
+    }
 }
