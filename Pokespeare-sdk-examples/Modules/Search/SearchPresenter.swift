@@ -64,6 +64,7 @@ extension SearchPresenter: SearchInteractorOutput {
     }
     
     func handle(searchResult result: Pokemon) {
+        view?.updateUI()
         let pokemonInfoVc = PokemonInfoWireframe().module()
         pokemonInfoVc.dataProvider?.pokemon = result
         guard let vc = self.view as? SearchViewController else { return }

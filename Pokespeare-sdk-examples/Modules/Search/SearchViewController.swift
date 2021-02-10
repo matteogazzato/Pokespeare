@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JGProgressHUD
 
 class SearchViewController: UIViewController {
     
@@ -16,6 +17,8 @@ class SearchViewController: UIViewController {
     
     var eventHandler: SearchEventHandler?
     var dataProvider: SearchDataProvider?
+    
+    private let hud = JGProgressHUD()
 
     // MARK: - UI Lifecycle
     override func viewDidLoad() {
@@ -36,11 +39,13 @@ class SearchViewController: UIViewController {
     
     @objc
     private func showFavourites() {
+        hud.dismiss()
         eventHandler?.onShowFavourites()
     }
 
     // MARK: - Actions
     @IBAction func search(_ sender: Any) {
+        hud.show(in: self.view)
         eventHandler?.onSearch(searchTextField.text)
     }
 }
@@ -48,9 +53,11 @@ class SearchViewController: UIViewController {
 extension SearchViewController: SearchViewProtocol {
     func updateUI() {
         // update UI elements here
+        hud.dismiss()
     }
     
     func showError(withMessage message: String) {
+        hud.dismiss()
         let alert = UIAlertController(title: "Warning",
                                       message: message,
                                       preferredStyle: .alert)
