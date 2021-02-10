@@ -22,8 +22,6 @@
 		475A734B25C9F97F0044DA35 /* Pokespeare_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 475A734125C9F97F0044DA35 /* Pokespeare_sdk.framework */; };
 		475A736425C9FAE60044DA35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475A736325C9FAE60044DA35 /* AppDelegate.swift */; };
 		475A736625C9FAE60044DA35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475A736525C9FAE60044DA35 /* SceneDelegate.swift */; };
-		475A736825C9FAE60044DA35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475A736725C9FAE60044DA35 /* ViewController.swift */; };
-		475A736B25C9FAE60044DA35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475A736925C9FAE60044DA35 /* Main.storyboard */; };
 		475A736D25C9FAE80044DA35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 475A736C25C9FAE80044DA35 /* Assets.xcassets */; };
 		475A737025C9FAE80044DA35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475A736E25C9FAE80044DA35 /* LaunchScreen.storyboard */; };
 		478DBCF925D436CE009592B1 /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478DBCF825D436CE009592B1 /* UserDefaultsExtension.swift */; };
@@ -119,8 +117,6 @@
 		475A736125C9FAE60044DA35 /* Pokespeare-sdk-examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokespeare-sdk-examples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		475A736325C9FAE60044DA35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		475A736525C9FAE60044DA35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		475A736725C9FAE60044DA35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		475A736A25C9FAE60044DA35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		475A736C25C9FAE80044DA35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		475A736F25C9FAE80044DA35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		475A737125C9FAE80044DA35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -341,8 +337,6 @@
 				474DCBAF25D349E800CBECEC /* Modules */,
 				475A736325C9FAE60044DA35 /* AppDelegate.swift */,
 				475A736525C9FAE60044DA35 /* SceneDelegate.swift */,
-				475A736725C9FAE60044DA35 /* ViewController.swift */,
-				475A736925C9FAE60044DA35 /* Main.storyboard */,
 				475A736C25C9FAE80044DA35 /* Assets.xcassets */,
 				475A736E25C9FAE80044DA35 /* LaunchScreen.storyboard */,
 				475A737125C9FAE80044DA35 /* Info.plist */,
@@ -683,7 +677,6 @@
 				47BE267725D3EFA3006FDB32 /* PokemonInfo.xib in Resources */,
 				478DBD5725D44FC3009592B1 /* Favourites.xib in Resources */,
 				475A736D25C9FAE80044DA35 /* Assets.xcassets in Resources */,
-				475A736B25C9FAE60044DA35 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -926,7 +919,6 @@
 				47BE267525D3EFA3006FDB32 /* PokemonInfoInteractor.swift in Sources */,
 				478DBD5625D44FC3009592B1 /* FavouritesEntities.swift in Sources */,
 				478DBD5825D44FC3009592B1 /* FavouritesWireframe.swift in Sources */,
-				475A736825C9FAE60044DA35 /* ViewController.swift in Sources */,
 				474DCBBA25D34A0100CBECEC /* SearchPresenter.swift in Sources */,
 				475A736425C9FAE60044DA35 /* AppDelegate.swift in Sources */,
 				47BE267625D3EFA3006FDB32 /* PokemonInfoEntities.swift in Sources */,
@@ -960,14 +952,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		475A736925C9FAE60044DA35 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				475A736A25C9FAE60044DA35 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		475A736E25C9FAE80044DA35 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

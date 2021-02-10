@@ -11,7 +11,7 @@ import UIKit
 class FavouritesViewController: UIViewController {
     
     // MARK: - Outlets
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var tableView: UITableView!
     
     var eventHandler: FavouritesEventHandler?
     var dataProvider: FavouritesDataProvider?

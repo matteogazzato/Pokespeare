@@ -11,8 +11,8 @@ import UIKit
 class SearchViewController: UIViewController {
     
     // MARK: - Outlets
-    @IBOutlet weak var searchTextField: UITextField!
-    @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet private weak var searchTextField: UITextField!
+    @IBOutlet private weak var searchButton: UIButton!
     
     var eventHandler: SearchEventHandler?
     var dataProvider: SearchDataProvider?

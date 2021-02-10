@@ -12,7 +12,7 @@ import Pokespeare_sdk
 class PokemonInfoViewController: UIViewController {
     
     // MARK: - Outlets
-    @IBOutlet weak var containerView: UIView!
+    @IBOutlet private weak var containerView: UIView!
 
     var eventHandler: PokemonInfoEventHandler?
     var dataProvider: PokemonInfoDataProvider?
