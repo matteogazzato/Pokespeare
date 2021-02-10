@@ -29,6 +29,8 @@
 		478DBCF925D436CE009592B1 /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478DBCF825D436CE009592B1 /* UserDefaultsExtension.swift */; };
 		478DBD0B25D43722009592B1 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478DBD0A25D43722009592B1 /* Storage.swift */; };
 		478DBD1025D437E9009592B1 /* Favourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478DBD0F25D437E9009592B1 /* Favourites.swift */; };
+		478DBD1E25D44388009592B1 /* Pokespeare_sdk_examples_tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478DBD1D25D44388009592B1 /* Pokespeare_sdk_examples_tests.swift */; };
+		478DBD2A25D443BE009592B1 /* StorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478DBD2925D443BE009592B1 /* StorageTests.swift */; };
 		47B0241325D2F348003E537D /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B0241225D2F348003E537D /* InfoView.swift */; };
 		47B0241825D2F366003E537D /* InfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47B0241725D2F366003E537D /* InfoView.xib */; };
 		47B0241D25D30B66003E537D /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B0241C25D30B66003E537D /* CustomView.swift */; };
@@ -76,6 +78,13 @@
 			remoteGlobalIDString = 475A734025C9F97F0044DA35;
 			remoteInfo = "Pokespeare-sdk";
 		};
+		478DBD2025D44388009592B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 475A733825C9F97F0044DA35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 475A736025C9FAE60044DA35;
+			remoteInfo = "Pokespeare-sdk-examples";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +117,10 @@
 		478DBCF825D436CE009592B1 /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
 		478DBD0A25D43722009592B1 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		478DBD0F25D437E9009592B1 /* Favourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourites.swift; sourceTree = "<group>"; };
+		478DBD1B25D44388009592B1 /* Pokespeare-sdk-examples-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pokespeare-sdk-examples-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		478DBD1D25D44388009592B1 /* Pokespeare_sdk_examples_tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokespeare_sdk_examples_tests.swift; sourceTree = "<group>"; };
+		478DBD1F25D44388009592B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		478DBD2925D443BE009592B1 /* StorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageTests.swift; sourceTree = "<group>"; };
 		47B0241225D2F348003E537D /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		47B0241725D2F366003E537D /* InfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoView.xib; sourceTree = "<group>"; };
 		47B0241C25D30B66003E537D /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
@@ -179,6 +192,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		478DBD1825D44388009592B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -246,6 +266,7 @@
 				475A734325C9F97F0044DA35 /* Pokespeare-sdk */,
 				475A734E25C9F97F0044DA35 /* Pokespeare-sdk-tests */,
 				475A736225C9FAE60044DA35 /* Pokespeare-sdk-examples */,
+				478DBD1C25D44388009592B1 /* Pokespeare-sdk-examples-tests */,
 				475A734225C9F97F0044DA35 /* Products */,
 				28E824D0A5EC0B4BEDBFC7EF /* Pods */,
 				72FD6DABAC4D01B686445A3A /* Frameworks */,
@@ -258,6 +279,7 @@
 				475A734125C9F97F0044DA35 /* Pokespeare_sdk.framework */,
 				475A734A25C9F97F0044DA35 /* Pokespeare-sdk-tests.xctest */,
 				475A736125C9FAE60044DA35 /* Pokespeare-sdk-examples.app */,
+				478DBD1B25D44388009592B1 /* Pokespeare-sdk-examples-tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -318,6 +340,16 @@
 				478DBCF825D436CE009592B1 /* UserDefaultsExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		478DBD1C25D44388009592B1 /* Pokespeare-sdk-examples-tests */ = {
+			isa = PBXGroup;
+			children = (
+				478DBD1D25D44388009592B1 /* Pokespeare_sdk_examples_tests.swift */,
+				478DBD1F25D44388009592B1 /* Info.plist */,
+				478DBD2925D443BE009592B1 /* StorageTests.swift */,
+			);
+			path = "Pokespeare-sdk-examples-tests";
 			sourceTree = "<group>";
 		};
 		47B6031425CB280400960F5B /* Entities */ = {
@@ -516,6 +548,24 @@
 			productReference = 475A736125C9FAE60044DA35 /* Pokespeare-sdk-examples.app */;
 			productType = "com.apple.product-type.application";
 		};
+		478DBD1A25D44388009592B1 /* Pokespeare-sdk-examples-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 478DBD2225D44388009592B1 /* Build configuration list for PBXNativeTarget "Pokespeare-sdk-examples-tests" */;
+			buildPhases = (
+				478DBD1725D44388009592B1 /* Sources */,
+				478DBD1825D44388009592B1 /* Frameworks */,
+				478DBD1925D44388009592B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				478DBD2125D44388009592B1 /* PBXTargetDependency */,
+			);
+			name = "Pokespeare-sdk-examples-tests";
+			productName = "Pokespeare-sdk-examples-tests";
+			productReference = 478DBD1B25D44388009592B1 /* Pokespeare-sdk-examples-tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -536,6 +586,10 @@
 					475A736025C9FAE60044DA35 = {
 						CreatedOnToolsVersion = 12.4;
 					};
+					478DBD1A25D44388009592B1 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 475A736025C9FAE60044DA35;
+					};
 				};
 			};
 			buildConfigurationList = 475A733B25C9F97F0044DA35 /* Build configuration list for PBXProject "Pokespeare-sdk" */;
@@ -554,6 +608,7 @@
 				475A734025C9F97F0044DA35 /* Pokespeare-sdk */,
 				475A734925C9F97F0044DA35 /* Pokespeare-sdk-tests */,
 				475A736025C9FAE60044DA35 /* Pokespeare-sdk-examples */,
+				478DBD1A25D44388009592B1 /* Pokespeare-sdk-examples-tests */,
 			);
 		};
 /* End PBXProject section */
@@ -583,6 +638,13 @@
 				47BE267725D3EFA3006FDB32 /* PokemonInfo.xib in Resources */,
 				475A736D25C9FAE80044DA35 /* Assets.xcassets in Resources */,
 				475A736B25C9FAE60044DA35 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		478DBD1925D44388009592B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -780,6 +842,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		478DBD1725D44388009592B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				478DBD1E25D44388009592B1 /* Pokespeare_sdk_examples_tests.swift in Sources */,
+				478DBD2A25D443BE009592B1 /* StorageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -787,6 +858,11 @@
 			isa = PBXTargetDependency;
 			target = 475A734025C9F97F0044DA35 /* Pokespeare-sdk */;
 			targetProxy = 475A734C25C9F97F0044DA35 /* PBXContainerItemProxy */;
+		};
+		478DBD2125D44388009592B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 475A736025C9FAE60044DA35 /* Pokespeare-sdk-examples */;
+			targetProxy = 478DBD2025D44388009592B1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1068,6 +1144,46 @@
 			};
 			name = Release;
 		};
+		478DBD2325D44388009592B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5P6GR8YMP;
+				INFOPLIST_FILE = "Pokespeare-sdk-examples-tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matteogazzato.Pokespeare-sdk-examples-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pokespeare-sdk-examples.app/Pokespeare-sdk-examples";
+			};
+			name = Debug;
+		};
+		478DBD2425D44388009592B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5P6GR8YMP;
+				INFOPLIST_FILE = "Pokespeare-sdk-examples-tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matteogazzato.Pokespeare-sdk-examples-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pokespeare-sdk-examples.app/Pokespeare-sdk-examples";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1103,6 +1219,15 @@
 			buildConfigurations = (
 				475A737325C9FAE80044DA35 /* Debug */,
 				475A737425C9FAE80044DA35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		478DBD2225D44388009592B1 /* Build configuration list for PBXNativeTarget "Pokespeare-sdk-examples-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				478DBD2325D44388009592B1 /* Debug */,
+				478DBD2425D44388009592B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
