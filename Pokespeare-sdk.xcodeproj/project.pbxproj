@@ -32,6 +32,14 @@
 		478DBD1E25D44388009592B1 /* Pokespeare_sdk_examples_tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478DBD1D25D44388009592B1 /* Pokespeare_sdk_examples_tests.swift */; };
 		478DBD2A25D443BE009592B1 /* StorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478DBD2925D443BE009592B1 /* StorageTests.swift */; };
 		478DBD3025D44CAF009592B1 /* PokemonInfoViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478DBD2F25D44CAF009592B1 /* PokemonInfoViewControllerTests.swift */; };
+		478DBD5125D44FC3009592B1 /* FavouritesNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478DBD4925D44FC3009592B1 /* FavouritesNetworkManager.swift */; };
+		478DBD5225D44FC3009592B1 /* FavouritesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478DBD4A25D44FC3009592B1 /* FavouritesPresenter.swift */; };
+		478DBD5325D44FC3009592B1 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478DBD4B25D44FC3009592B1 /* FavouritesViewController.swift */; };
+		478DBD5425D44FC3009592B1 /* FavouritesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478DBD4C25D44FC3009592B1 /* FavouritesProtocols.swift */; };
+		478DBD5525D44FC3009592B1 /* FavouritesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478DBD4D25D44FC3009592B1 /* FavouritesInteractor.swift */; };
+		478DBD5625D44FC3009592B1 /* FavouritesEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478DBD4E25D44FC3009592B1 /* FavouritesEntities.swift */; };
+		478DBD5725D44FC3009592B1 /* Favourites.xib in Resources */ = {isa = PBXBuildFile; fileRef = 478DBD4F25D44FC3009592B1 /* Favourites.xib */; };
+		478DBD5825D44FC3009592B1 /* FavouritesWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478DBD5025D44FC3009592B1 /* FavouritesWireframe.swift */; };
 		47B0241325D2F348003E537D /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B0241225D2F348003E537D /* InfoView.swift */; };
 		47B0241825D2F366003E537D /* InfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47B0241725D2F366003E537D /* InfoView.xib */; };
 		47B0241D25D30B66003E537D /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B0241C25D30B66003E537D /* CustomView.swift */; };
@@ -124,6 +132,14 @@
 		478DBD1F25D44388009592B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		478DBD2925D443BE009592B1 /* StorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageTests.swift; sourceTree = "<group>"; };
 		478DBD2F25D44CAF009592B1 /* PokemonInfoViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoViewControllerTests.swift; sourceTree = "<group>"; };
+		478DBD4925D44FC3009592B1 /* FavouritesNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesNetworkManager.swift; sourceTree = "<group>"; };
+		478DBD4A25D44FC3009592B1 /* FavouritesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesPresenter.swift; sourceTree = "<group>"; };
+		478DBD4B25D44FC3009592B1 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		478DBD4C25D44FC3009592B1 /* FavouritesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesProtocols.swift; sourceTree = "<group>"; };
+		478DBD4D25D44FC3009592B1 /* FavouritesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesInteractor.swift; sourceTree = "<group>"; };
+		478DBD4E25D44FC3009592B1 /* FavouritesEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesEntities.swift; sourceTree = "<group>"; };
+		478DBD4F25D44FC3009592B1 /* Favourites.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Favourites.xib; sourceTree = "<group>"; };
+		478DBD5025D44FC3009592B1 /* FavouritesWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesWireframe.swift; sourceTree = "<group>"; };
 		47B0241225D2F348003E537D /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		47B0241725D2F366003E537D /* InfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoView.xib; sourceTree = "<group>"; };
 		47B0241C25D30B66003E537D /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
@@ -237,7 +253,7 @@
 		474DCBAF25D349E800CBECEC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				478DBCF625D43612009592B1 /* Model */,
+				478DBD4825D44F9A009592B1 /* Favourites */,
 				47BE266825D3EF6D006FDB32 /* PokemonInfo */,
 				474DCBB025D349F400CBECEC /* Search */,
 			);
@@ -321,6 +337,7 @@
 		475A736225C9FAE60044DA35 /* Pokespeare-sdk-examples */ = {
 			isa = PBXGroup;
 			children = (
+				478DBCF625D43612009592B1 /* Model */,
 				474DCBAF25D349E800CBECEC /* Modules */,
 				475A736325C9FAE60044DA35 /* AppDelegate.swift */,
 				475A736525C9FAE60044DA35 /* SceneDelegate.swift */,
@@ -360,6 +377,21 @@
 				478DBD2F25D44CAF009592B1 /* PokemonInfoViewControllerTests.swift */,
 			);
 			path = "Pokespeare-sdk-examples-tests";
+			sourceTree = "<group>";
+		};
+		478DBD4825D44F9A009592B1 /* Favourites */ = {
+			isa = PBXGroup;
+			children = (
+				478DBD4925D44FC3009592B1 /* FavouritesNetworkManager.swift */,
+				478DBD4A25D44FC3009592B1 /* FavouritesPresenter.swift */,
+				478DBD4B25D44FC3009592B1 /* FavouritesViewController.swift */,
+				478DBD4C25D44FC3009592B1 /* FavouritesProtocols.swift */,
+				478DBD4D25D44FC3009592B1 /* FavouritesInteractor.swift */,
+				478DBD4E25D44FC3009592B1 /* FavouritesEntities.swift */,
+				478DBD4F25D44FC3009592B1 /* Favourites.xib */,
+				478DBD5025D44FC3009592B1 /* FavouritesWireframe.swift */,
+			);
+			path = Favourites;
 			sourceTree = "<group>";
 		};
 		47B6031425CB280400960F5B /* Entities */ = {
@@ -649,6 +681,7 @@
 				475A737025C9FAE80044DA35 /* LaunchScreen.storyboard in Resources */,
 				474DCBBF25D34A0100CBECEC /* Search.xib in Resources */,
 				47BE267725D3EFA3006FDB32 /* PokemonInfo.xib in Resources */,
+				478DBD5725D44FC3009592B1 /* Favourites.xib in Resources */,
 				475A736D25C9FAE80044DA35 /* Assets.xcassets in Resources */,
 				475A736B25C9FAE60044DA35 /* Main.storyboard in Resources */,
 			);
@@ -870,8 +903,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				478DBD5325D44FC3009592B1 /* FavouritesViewController.swift in Sources */,
+				478DBD5425D44FC3009592B1 /* FavouritesProtocols.swift in Sources */,
 				47BE267325D3EFA3006FDB32 /* PokemonInfoViewController.swift in Sources */,
 				478DBD1025D437E9009592B1 /* Favourites.swift in Sources */,
+				478DBD5125D44FC3009592B1 /* FavouritesNetworkManager.swift in Sources */,
+				478DBD5225D44FC3009592B1 /* FavouritesPresenter.swift in Sources */,
 				474DCBBB25D34A0100CBECEC /* SearchViewController.swift in Sources */,
 				474DCBB925D34A0100CBECEC /* SearchNetworkManager.swift in Sources */,
 				478DBCF925D436CE009592B1 /* UserDefaultsExtension.swift in Sources */,
@@ -884,8 +921,11 @@
 				474DCBBC25D34A0100CBECEC /* SearchProtocols.swift in Sources */,
 				47BE267425D3EFA3006FDB32 /* PokemonInfoProtocols.swift in Sources */,
 				47BE267225D3EFA3006FDB32 /* PokemonInfoPresenter.swift in Sources */,
+				478DBD5525D44FC3009592B1 /* FavouritesInteractor.swift in Sources */,
 				47BE267125D3EFA3006FDB32 /* PokemonInfoNetworkManager.swift in Sources */,
 				47BE267525D3EFA3006FDB32 /* PokemonInfoInteractor.swift in Sources */,
+				478DBD5625D44FC3009592B1 /* FavouritesEntities.swift in Sources */,
+				478DBD5825D44FC3009592B1 /* FavouritesWireframe.swift in Sources */,
 				475A736825C9FAE60044DA35 /* ViewController.swift in Sources */,
 				474DCBBA25D34A0100CBECEC /* SearchPresenter.swift in Sources */,
 				475A736425C9FAE60044DA35 /* AppDelegate.swift in Sources */,
