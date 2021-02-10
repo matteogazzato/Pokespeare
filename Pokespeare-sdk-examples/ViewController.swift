@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Pokespeare_sdk
 
 class ViewController: UIViewController {
 
