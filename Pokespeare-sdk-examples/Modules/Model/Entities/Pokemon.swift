@@ -5,7 +5,7 @@
 //  Created by Matteo Gazzato on 10/02/21.
 //
 
-struct Pokemon {
+struct Pokemon: Codable {
     var name: String = ""
     var description: String = ""
     var sprite: String = ""

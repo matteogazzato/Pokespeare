@@ -9,12 +9,12 @@
 import Foundation
 
 class SearchInteractor {
-
-	fileprivate let networkManager: SearchNetworkManagerProtocol
+    
+    fileprivate let networkManager: SearchNetworkManagerProtocol
     weak var output: SearchInteractorOutput?
     
     private var pokemonSearchResult = Pokemon()
-
+    
     init(networkManager: SearchNetworkManagerProtocol = SearchNetworkManager()){
         self.networkManager = networkManager
     }
@@ -22,21 +22,27 @@ class SearchInteractor {
 
 extension SearchInteractor: SearchInteractorProtocol {
     func search(pokemonWithName name: String) {
-        pokemonSearchResult.name = name
-        networkManager.fetchDescription(forPokemonWithName: pokemonSearchResult.name) { [weak self] (description, error) in
-            guard let self = self else { return }
-            if let error = error {
-                NSLog(error.localizedDescription)
-                self.output?.handle(searchError: error)
-            } else {
-                guard let description = description else {
-                    self.output?.handle(searchError: SearchError(.noDescription))
-                    return
-                }
-                self.pokemonSearchResult.description = description
-                self.fetchSprite()
-            }
-        }
+        // TODO: REMOVE
+        self.output?.handle(searchResult: Pokemon(name: "Charizard",
+                                                  description: "Spits fire yond is hot enow to melt boulders. Known to cause forest fires unintentionally.",
+                                                  sprite: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"))
+        
+        
+//        pokemonSearchResult.name = name
+//        networkManager.fetchDescription(forPokemonWithName: pokemonSearchResult.name) { [weak self] (description, error) in
+//            guard let self = self else { return }
+//            if let error = error {
+//                NSLog(error.localizedDescription)
+//                self.output?.handle(searchError: error)
+//            } else {
+//                guard let description = description else {
+//                    self.output?.handle(searchError: SearchError(.noDescription))
+//                    return
+//                }
+//                self.pokemonSearchResult.description = description
+//                self.fetchSprite()
+//            }
+//        }
     }
 }
 
