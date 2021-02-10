@@ -31,6 +31,7 @@
 		478DBD1025D437E9009592B1 /* Favourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478DBD0F25D437E9009592B1 /* Favourites.swift */; };
 		478DBD1E25D44388009592B1 /* Pokespeare_sdk_examples_tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478DBD1D25D44388009592B1 /* Pokespeare_sdk_examples_tests.swift */; };
 		478DBD2A25D443BE009592B1 /* StorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478DBD2925D443BE009592B1 /* StorageTests.swift */; };
+		478DBD3025D44CAF009592B1 /* PokemonInfoViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478DBD2F25D44CAF009592B1 /* PokemonInfoViewControllerTests.swift */; };
 		47B0241325D2F348003E537D /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B0241225D2F348003E537D /* InfoView.swift */; };
 		47B0241825D2F366003E537D /* InfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47B0241725D2F366003E537D /* InfoView.xib */; };
 		47B0241D25D30B66003E537D /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B0241C25D30B66003E537D /* CustomView.swift */; };
@@ -68,6 +69,7 @@
 		900A71EDE8194671583FE74C /* Pods_Pokespeare_sdk_tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73053B424F1825E6478CF316 /* Pods_Pokespeare_sdk_tests.framework */; };
 		BCB1787D843F859BD32250A6 /* Pods_Pokespeare_sdk_examples.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E9B3E2AE6DD2ED014338787 /* Pods_Pokespeare_sdk_examples.framework */; };
 		DB17BF2144EB3A8A2AA72D9E /* Pods_Pokespeare_sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C91E61494722F467A0FF82F3 /* Pods_Pokespeare_sdk.framework */; };
+		FCC7AA3A76C5265FE4437CDC /* Pods_Pokespeare_sdk_examples_tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77E6910DBE225845FE54191 /* Pods_Pokespeare_sdk_examples_tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +123,7 @@
 		478DBD1D25D44388009592B1 /* Pokespeare_sdk_examples_tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokespeare_sdk_examples_tests.swift; sourceTree = "<group>"; };
 		478DBD1F25D44388009592B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		478DBD2925D443BE009592B1 /* StorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageTests.swift; sourceTree = "<group>"; };
+		478DBD2F25D44CAF009592B1 /* PokemonInfoViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoViewControllerTests.swift; sourceTree = "<group>"; };
 		47B0241225D2F348003E537D /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		47B0241725D2F366003E537D /* InfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoView.xib; sourceTree = "<group>"; };
 		47B0241C25D30B66003E537D /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
@@ -158,10 +161,13 @@
 		4D3458AFDB153FCF60D19D6F /* Pods-Pokespeare-sdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokespeare-sdk.debug.xcconfig"; path = "Target Support Files/Pods-Pokespeare-sdk/Pods-Pokespeare-sdk.debug.xcconfig"; sourceTree = "<group>"; };
 		6776CD1E678BEA557EBE5989 /* Pods-Pokespeare-sdk-tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokespeare-sdk-tests.release.xcconfig"; path = "Target Support Files/Pods-Pokespeare-sdk-tests/Pods-Pokespeare-sdk-tests.release.xcconfig"; sourceTree = "<group>"; };
 		73053B424F1825E6478CF316 /* Pods_Pokespeare_sdk_tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pokespeare_sdk_tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7596040BB64E0B679053CB08 /* Pods-Pokespeare-sdk-examples-tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokespeare-sdk-examples-tests.debug.xcconfig"; path = "Target Support Files/Pods-Pokespeare-sdk-examples-tests/Pods-Pokespeare-sdk-examples-tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E77F47A882F256E10308355 /* Pods-Pokespeare-sdk-examples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokespeare-sdk-examples.debug.xcconfig"; path = "Target Support Files/Pods-Pokespeare-sdk-examples/Pods-Pokespeare-sdk-examples.debug.xcconfig"; sourceTree = "<group>"; };
+		A810BE46D9D6A57346729FE1 /* Pods-Pokespeare-sdk-examples-tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokespeare-sdk-examples-tests.release.xcconfig"; path = "Target Support Files/Pods-Pokespeare-sdk-examples-tests/Pods-Pokespeare-sdk-examples-tests.release.xcconfig"; sourceTree = "<group>"; };
 		B774FB19983A801EF4D521AD /* Pods-Pokespeare-sdkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokespeare-sdkTests.release.xcconfig"; path = "Target Support Files/Pods-Pokespeare-sdkTests/Pods-Pokespeare-sdkTests.release.xcconfig"; sourceTree = "<group>"; };
 		C1BFD5628321D0C4C67C7E6D /* Pods-Pokespeare-sdk-tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokespeare-sdk-tests.debug.xcconfig"; path = "Target Support Files/Pods-Pokespeare-sdk-tests/Pods-Pokespeare-sdk-tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C91E61494722F467A0FF82F3 /* Pods_Pokespeare_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pokespeare_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E77E6910DBE225845FE54191 /* Pods_Pokespeare_sdk_examples_tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pokespeare_sdk_examples_tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA17DE9471DF795C542C0F2 /* Pods-Pokespeare-sdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokespeare-sdk.release.xcconfig"; path = "Target Support Files/Pods-Pokespeare-sdk/Pods-Pokespeare-sdk.release.xcconfig"; sourceTree = "<group>"; };
 		EF4D9366BFA7686DA9B8949F /* Pods-Pokespeare-sdk-examples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokespeare-sdk-examples.release.xcconfig"; path = "Target Support Files/Pods-Pokespeare-sdk-examples/Pods-Pokespeare-sdk-examples.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -196,6 +202,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCC7AA3A76C5265FE4437CDC /* Pods_Pokespeare_sdk_examples_tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +220,8 @@
 				B774FB19983A801EF4D521AD /* Pods-Pokespeare-sdkTests.release.xcconfig */,
 				C1BFD5628321D0C4C67C7E6D /* Pods-Pokespeare-sdk-tests.debug.xcconfig */,
 				6776CD1E678BEA557EBE5989 /* Pods-Pokespeare-sdk-tests.release.xcconfig */,
+				7596040BB64E0B679053CB08 /* Pods-Pokespeare-sdk-examples-tests.debug.xcconfig */,
+				A810BE46D9D6A57346729FE1 /* Pods-Pokespeare-sdk-examples-tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -348,6 +357,7 @@
 				478DBD1D25D44388009592B1 /* Pokespeare_sdk_examples_tests.swift */,
 				478DBD1F25D44388009592B1 /* Info.plist */,
 				478DBD2925D443BE009592B1 /* StorageTests.swift */,
+				478DBD2F25D44CAF009592B1 /* PokemonInfoViewControllerTests.swift */,
 			);
 			path = "Pokespeare-sdk-examples-tests";
 			sourceTree = "<group>";
@@ -472,6 +482,7 @@
 				C91E61494722F467A0FF82F3 /* Pods_Pokespeare_sdk.framework */,
 				0E9B3E2AE6DD2ED014338787 /* Pods_Pokespeare_sdk_examples.framework */,
 				73053B424F1825E6478CF316 /* Pods_Pokespeare_sdk_tests.framework */,
+				E77E6910DBE225845FE54191 /* Pods_Pokespeare_sdk_examples_tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -552,9 +563,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 478DBD2225D44388009592B1 /* Build configuration list for PBXNativeTarget "Pokespeare-sdk-examples-tests" */;
 			buildPhases = (
+				376B830B0BF6CF73C53F95E3 /* [CP] Check Pods Manifest.lock */,
 				478DBD1725D44388009592B1 /* Sources */,
 				478DBD1825D44388009592B1 /* Frameworks */,
 				478DBD1925D44388009592B1 /* Resources */,
+				45907E9A56F92798A82C58A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -651,6 +664,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		376B830B0BF6CF73C53F95E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pokespeare-sdk-examples-tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		38046A660CFF251A32AB4FAC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -688,6 +723,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pokespeare-sdk-tests/Pods-Pokespeare-sdk-tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45907E9A56F92798A82C58A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pokespeare-sdk-examples-tests/Pods-Pokespeare-sdk-examples-tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pokespeare-sdk-examples-tests/Pods-Pokespeare-sdk-examples-tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pokespeare-sdk-examples-tests/Pods-Pokespeare-sdk-examples-tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		47DF038325CA134F00DBBD2C /* TODOs & FIXMEs warnings check */ = {
@@ -848,6 +900,7 @@
 			files = (
 				478DBD1E25D44388009592B1 /* Pokespeare_sdk_examples_tests.swift in Sources */,
 				478DBD2A25D443BE009592B1 /* StorageTests.swift in Sources */,
+				478DBD3025D44CAF009592B1 /* PokemonInfoViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1146,6 +1199,7 @@
 		};
 		478DBD2325D44388009592B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7596040BB64E0B679053CB08 /* Pods-Pokespeare-sdk-examples-tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1166,6 +1220,7 @@
 		};
 		478DBD2425D44388009592B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A810BE46D9D6A57346729FE1 /* Pods-Pokespeare-sdk-examples-tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

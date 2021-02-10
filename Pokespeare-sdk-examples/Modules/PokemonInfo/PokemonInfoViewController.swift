@@ -53,7 +53,7 @@ extension PokemonInfoViewController: PokemonInfoViewProtocol {
         guard let pokemon = dataProvider?.pokemon else { return }
         let image = pokemon.favourite ? UIImage(systemName: "heart.fill") : UIImage(systemName: "heart")
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(addRemoveFromFavs))
-        if containerView.subviews.isEmpty {
+        if containerView?.subviews.isEmpty ?? false {
             let infoDesc = InfoViewDescriptor(description: pokemon.description, name: pokemon.name, sprite: pokemon.sprite)
             let infoView = InfoView(frame: containerView.frame)
             infoView.updateUI(withDescriptor: infoDesc)
