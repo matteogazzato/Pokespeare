@@ -31,7 +31,12 @@ class PokemonInfoViewController: UIViewController {
     // MARK: - Internal Utils
     fileprivate func setupUI() {
         // setup UI elements here
-        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(dismissVc))
+    }
+    
+    @objc
+    private func dismissVc() {
+        eventHandler?.onDismiss()
     }
 
     // MARK: - Actions

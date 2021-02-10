@@ -27,6 +27,7 @@ extension PokemonInfoWireframe: PokemonInfoWireframeProtocol {
     
     // MARK: - PokemonInfoWireframeProtocol
     func dismiss(_ view: PokemonInfoViewProtocol) {
-        // Add custom implementation to dismiss viewController
+        guard let vc = view as? PokemonInfoViewController else { return }
+        vc.navigationController?.dismiss(animated: true, completion: nil)
     }
 }

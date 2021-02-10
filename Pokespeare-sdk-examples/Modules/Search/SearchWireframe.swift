@@ -31,6 +31,7 @@ extension SearchWireframe: SearchWireframeProtocol {
     }
     
     func present(pokemonInfoViewController pokemonInfoVc: PokemonInfoViewController, fromViewController vc: UIViewController) {
-        vc.present(pokemonInfoVc, animated: true, completion: nil)
+        let pokemonInfoNVc = UINavigationController(rootViewController: pokemonInfoVc)
+        vc.present(pokemonInfoNVc, animated: true, completion: nil)
     }
 }
