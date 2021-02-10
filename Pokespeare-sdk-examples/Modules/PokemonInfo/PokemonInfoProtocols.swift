@@ -13,7 +13,8 @@ protocol PokemonInfoViewProtocol: AnyObject {
 }
 
 protocol PokemonInfoInteractorProtocol: AnyObject {
-    // Add PokemonInfoInteractorProtocol definition
+    func pokemonIsInFavs(_ pokemon: Pokemon) -> Bool
+    func pokemon(_ pokemon: Pokemon, shouldBeInFavs value: Bool)
 }
 
 protocol PokemonInfoWireframeProtocol: AnyObject {

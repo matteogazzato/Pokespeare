@@ -30,4 +30,10 @@ class StorageTests: XCTestCase {
         _ = Storage.addToFavourites(pokemon)
         XCTAssertEqual(Storage.getAllFavourites().count, 1)
     }
+    
+    func testChecIfInFavs() throws {
+        let pokemon = Pokemon(name: "PokemonName", description: "PokemonDescription", sprite: "PokemonSprite")
+        _ = Storage.addToFavourites(pokemon)
+        XCTAssertTrue(Storage.checkIfInFavourites(pokemon))
+    }
 }

@@ -33,6 +33,11 @@ class Storage {
         
     }
     
+    static func checkIfInFavourites(_ pokemon: Pokemon) -> Bool {
+        let favs = getAllFavourites()
+        return favs.first { $0.name == pokemon.name} != nil
+    }
+    
     static func removeFromFavourites(_ pokemon: Pokemon) -> Bool {
         let userDefaults = UserDefaults.standard
         do {

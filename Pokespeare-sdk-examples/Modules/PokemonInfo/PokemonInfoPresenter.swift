@@ -33,6 +33,7 @@ class PokemonInfoPresenter: PokemonInfoDataProvider {
 // MARK: - PokemonInfoEventHandler
 extension PokemonInfoPresenter: PokemonInfoEventHandler {
     func onViewDidLoad() {
+        pokemon.favourite = interactor.pokemonIsInFavs(pokemon)
         view?.updateUI()
     }
     
@@ -42,7 +43,9 @@ extension PokemonInfoPresenter: PokemonInfoEventHandler {
     }
     
     func onAddRemoveFromFavs() {
-        // TODO: Implement 
+        interactor.pokemon(pokemon, shouldBeInFavs: !pokemon.favourite)
+        pokemon.favourite = !pokemon.favourite
+        view?.updateUI()
     }
 }
 

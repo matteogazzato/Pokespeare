@@ -32,8 +32,6 @@ class PokemonInfoViewController: UIViewController {
     fileprivate func setupUI() {
         // setup UI elements here
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(dismissVc))
-        let image = UIImage(systemName: "heart")
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(addRemoveFromFavs))
     }
     
     @objc
@@ -52,10 +50,14 @@ class PokemonInfoViewController: UIViewController {
 
 extension PokemonInfoViewController: PokemonInfoViewProtocol {
     func updateUI() {
-        guard let desc = dataProvider?.pokemon else { return }
-        let infoDesc = InfoViewDescriptor(description: desc.description, name: desc.name, sprite: desc.sprite)
-        let infoView = InfoView(frame: containerView.frame)
-        infoView.updateUI(withDescriptor: infoDesc)
-        containerView.addSubview(infoView)
+        guard let pokemon = dataProvider?.pokemon else { return }
+        let image = pokemon.favourite ? UIImage(systemName: "heart.fill") : UIImage(systemName: "heart")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(addRemoveFromFavs))
+        if containerView.subviews.isEmpty {
+            let infoDesc = InfoViewDescriptor(description: pokemon.description, name: pokemon.name, sprite: pokemon.sprite)
+            let infoView = InfoView(frame: containerView.frame)
+            infoView.updateUI(withDescriptor: infoDesc)
+            containerView.addSubview(infoView)
+        }
     }
 }

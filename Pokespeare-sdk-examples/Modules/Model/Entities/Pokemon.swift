@@ -9,4 +9,11 @@ struct Pokemon: Codable {
     var name: String = ""
     var description: String = ""
     var sprite: String = ""
+    var favourite: Bool = false
+    
+    enum CodingKeys: String, CodingKey {
+        case name
+        case description
+        case sprite
+    }
 }
