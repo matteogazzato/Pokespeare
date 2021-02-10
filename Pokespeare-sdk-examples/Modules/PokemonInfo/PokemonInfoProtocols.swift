@@ -18,12 +18,13 @@ protocol PokemonInfoInteractorProtocol: AnyObject {
 }
 
 protocol PokemonInfoWireframeProtocol: AnyObject {
-    func module() -> PokemonInfoViewController
+    func module(withDelegate delegate: PokemonInfoDelegate?) -> PokemonInfoViewController
     func dismiss(_ vc: PokemonInfoViewProtocol)
 }
 
 protocol PokemonInfoEventHandler: AnyObject {
     func onViewDidLoad()
+    func onViewWillDisappear()
     func onDismiss()
     func onAddRemoveFromFavs()
 }
@@ -38,6 +39,7 @@ protocol PokemonInfoInteractorOutput: AnyObject {
 
 protocol PokemonInfoDelegate: AnyObject {
     // Add PokemonInfoDelegate definition
+    func onPokemonInfoDismissed()
 }
 
 protocol PokemonInfoNetworkManagerProtocol: AnyObject {

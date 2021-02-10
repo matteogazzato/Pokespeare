@@ -34,12 +34,23 @@ class FavouritesPresenter: FavouritesDataProvider {
 extension FavouritesPresenter: FavouritesEventHandler {
     func onViewDidLoad() {
         // Add onViewDidLoad implementation
+    }
+    
+    func onViewDidAppear() {
         interactor.retrieveFavs()
     }
     
     func onDismiss() {
         guard let vc = view else { return }
         wireframe.dismiss(vc)
+    }
+    
+    func onFavouriteSelected(atIndex index: Int) {
+        let pokemon = favs[index]
+        let pokemonInfoVc = PokemonInfoWireframe().module(withDelegate: self)
+        pokemonInfoVc.dataProvider?.pokemon = pokemon
+        guard let vc = self.view as? FavouritesViewController else { return }
+        wireframe.present(pokemonInfoViewController: pokemonInfoVc, fromViewController: vc)
     }
 }
 
@@ -48,5 +59,12 @@ extension FavouritesPresenter: FavouritesInteractorOutput {
     func onFavsRetrieved(_ favs: [Pokemon]) {
         self.favs = favs
         view?.updateUI()
+    }
+}
+
+// MARK: - PokemonInfoDelegate
+extension FavouritesPresenter: PokemonInfoDelegate {
+    func onPokemonInfoDismissed() {
+        interactor.retrieveFavs()
     }
 }

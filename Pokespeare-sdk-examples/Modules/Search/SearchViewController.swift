@@ -31,6 +31,12 @@ class SearchViewController: UIViewController {
     // MARK: - Internal Utils
     fileprivate func setupUI() {
         // setup UI elements here
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .bookmarks, target: self, action: #selector(showFavourites))
+    }
+    
+    @objc
+    private func showFavourites() {
+        eventHandler?.onShowFavourites()
     }
 
     // MARK: - Actions

@@ -49,6 +49,12 @@ extension SearchPresenter: SearchEventHandler {
         guard let vc = view else { return }
         wireframe.dismiss(vc)
     }
+    
+    func onShowFavourites() {
+        let favsVc = FavouritesWireframe().module()
+        guard let vc = self.view as? SearchViewController else { return }
+        wireframe.present(favouritesViewController: favsVc, fromViewController: vc)
+    }
 }
 
 // MARK: - SearchInteractorOutput

@@ -13,6 +13,10 @@ class StorageTests: XCTestCase {
     override func setUpWithError() throws {
         Storage.initialize()
     }
+    
+    override func tearDown() {
+        Storage.initialize()
+    }
 
     func testAddPokemonToFavs() throws {
         let pokemon = Pokemon(name: "PokemonName", description: "PokemonDescription", sprite: "PokemonSprite")

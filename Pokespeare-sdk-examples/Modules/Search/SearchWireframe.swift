@@ -34,4 +34,8 @@ extension SearchWireframe: SearchWireframeProtocol {
         let pokemonInfoNVc = UINavigationController(rootViewController: pokemonInfoVc)
         vc.present(pokemonInfoNVc, animated: true, completion: nil)
     }
+    
+    func present(favouritesViewController favouritesVc: FavouritesViewController, fromViewController vc: UIViewController) {
+        vc.navigationController?.pushViewController(favouritesVc, animated: true)
+    }
 }

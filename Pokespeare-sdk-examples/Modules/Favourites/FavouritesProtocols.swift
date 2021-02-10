@@ -20,11 +20,14 @@ protocol FavouritesInteractorProtocol: AnyObject {
 protocol FavouritesWireframeProtocol: AnyObject {
 	func module() -> FavouritesViewController
     func dismiss(_ vc: FavouritesViewProtocol)
+    func present(pokemonInfoViewController pokemonInfoVc: PokemonInfoViewController, fromViewController vc: UIViewController)
 }
 
 protocol FavouritesEventHandler: AnyObject {
     func onViewDidLoad()
+    func onViewDidAppear()
     func onDismiss()
+    func onFavouriteSelected(atIndex index: Int)
 }
 
 protocol FavouritesDataProvider: AnyObject {

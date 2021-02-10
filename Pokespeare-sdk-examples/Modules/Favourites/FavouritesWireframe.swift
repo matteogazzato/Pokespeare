@@ -29,4 +29,9 @@ extension FavouritesWireframe: FavouritesWireframeProtocol {
     func dismiss(_ view: FavouritesViewProtocol) {
         // Add custom implementation to dismiss viewController
     }
+    
+    func present(pokemonInfoViewController pokemonInfoVc: PokemonInfoViewController, fromViewController vc: UIViewController) {
+        let pokemonInfoNVc = UINavigationController(rootViewController: pokemonInfoVc)
+        vc.present(pokemonInfoNVc, animated: true, completion: nil)
+    }
 }

@@ -22,6 +22,7 @@ protocol SearchWireframeProtocol: AnyObject {
 	func module() -> SearchViewController
     func dismiss(_ vc: SearchViewProtocol)
     func present(pokemonInfoViewController pokemonInfoVc: PokemonInfoViewController, fromViewController vc: UIViewController)
+    func present(favouritesViewController favouritesVc: FavouritesViewController, fromViewController vc: UIViewController)
 }
 
 protocol SearchEventHandler: AnyObject {
@@ -29,6 +30,7 @@ protocol SearchEventHandler: AnyObject {
     func onDismiss()
     
     func onSearch(_ name: String?)
+    func onShowFavourites()
 }
 
 protocol SearchDataProvider: AnyObject {

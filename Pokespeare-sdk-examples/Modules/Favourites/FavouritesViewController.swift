@@ -23,12 +23,19 @@ class FavouritesViewController: UIViewController {
         self.eventHandler?.onViewDidLoad()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        eventHandler?.onViewDidAppear()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
     // MARK: - Internal Utils
     fileprivate func setupUI() {
+        tableView.delegate = self
+        tableView.dataSource = self
         tableView.tableFooterView = UIView()
     }
     
@@ -54,7 +61,13 @@ extension FavouritesViewController: UITableViewDelegate, UITableViewDataSource {
         }
         let cell = UITableViewCell()
         cell.textLabel?.text = pokemon.name
-        return UITableViewCell()
+        cell.textLabel?.textColor = .black
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        eventHandler?.onFavouriteSelected(atIndex: indexPath.row)
     }
     
 }

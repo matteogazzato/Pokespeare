@@ -13,13 +13,16 @@ class PokemonInfoPresenter: PokemonInfoDataProvider {
     fileprivate weak var view: PokemonInfoViewProtocol?
     fileprivate let interactor: PokemonInfoInteractorProtocol
     fileprivate let wireframe: PokemonInfoWireframeProtocol
+    fileprivate weak var delegate: PokemonInfoDelegate?
         
     init(view: PokemonInfoViewProtocol,
          interactor: PokemonInfoInteractorProtocol,
-         wireframe: PokemonInfoWireframeProtocol) {
+         wireframe: PokemonInfoWireframeProtocol,
+         delegate: PokemonInfoDelegate?) {
         self.view = view
         self.interactor = interactor
         self.wireframe = wireframe
+        self.delegate = delegate
     }
     
     // MARK: - PokemonInfoDataProvider
@@ -39,7 +42,12 @@ extension PokemonInfoPresenter: PokemonInfoEventHandler {
     
     func onDismiss() {
         guard let vc = view else { return }
+        delegate?.onPokemonInfoDismissed()
         wireframe.dismiss(vc)
+    }
+    
+    func onViewWillDisappear() {
+        delegate?.onPokemonInfoDismissed()
     }
     
     func onAddRemoveFromFavs() {

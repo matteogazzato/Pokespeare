@@ -13,11 +13,11 @@ class PokemonInfoWireframe {
 }
 
 extension PokemonInfoWireframe: PokemonInfoWireframeProtocol {
-    func module() -> PokemonInfoViewController {
+    func module(withDelegate delegate: PokemonInfoDelegate? = nil) -> PokemonInfoViewController {
         let vc = PokemonInfoViewController(nibName: nibName, bundle: nil)
 
         let interactor = PokemonInfoInteractor()
-        let presenter = PokemonInfoPresenter(view: vc, interactor: interactor, wireframe: self)
+        let presenter = PokemonInfoPresenter(view: vc, interactor: interactor, wireframe: self, delegate: delegate)
         vc.eventHandler = presenter
         vc.dataProvider = presenter
 

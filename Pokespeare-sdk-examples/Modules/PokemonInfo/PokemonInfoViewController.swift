@@ -27,6 +27,11 @@ class PokemonInfoViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        eventHandler?.onViewWillDisappear()
+    }
 
     // MARK: - Internal Utils
     fileprivate func setupUI() {
