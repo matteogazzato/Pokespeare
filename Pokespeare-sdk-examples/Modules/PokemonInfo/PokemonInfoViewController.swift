@@ -32,11 +32,18 @@ class PokemonInfoViewController: UIViewController {
     fileprivate func setupUI() {
         // setup UI elements here
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(dismissVc))
+        let image = UIImage(systemName: "heart")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(addRemoveFromFavs))
     }
     
     @objc
     private func dismissVc() {
         eventHandler?.onDismiss()
+    }
+    
+    @objc
+    private func addRemoveFromFavs() {
+        eventHandler?.onAddRemoveFromFavs()
     }
 
     // MARK: - Actions

@@ -24,6 +24,7 @@ protocol PokemonInfoWireframeProtocol: AnyObject {
 protocol PokemonInfoEventHandler: AnyObject {
     func onViewDidLoad()
     func onDismiss()
+    func onAddRemoveFromFavs()
 }
 
 protocol PokemonInfoDataProvider: AnyObject {

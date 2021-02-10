@@ -40,6 +40,10 @@ extension PokemonInfoPresenter: PokemonInfoEventHandler {
         guard let vc = view else { return }
         wireframe.dismiss(vc)
     }
+    
+    func onAddRemoveFromFavs() {
+        // TODO: Implement 
+    }
 }
 
 // MARK: - PokemonInfoInteractorOutput
