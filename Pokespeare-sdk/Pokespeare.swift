@@ -8,6 +8,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
+/// PokemonVersion entity represents the different Pokemon game versions
 public enum PokemonVersion: String {
     case red = "red"
     case blue = "blue"
@@ -17,6 +18,8 @@ public enum PokemonVersion: String {
 }
 
 // MARK: - Public Utils
+
+/// Pokespeare class is the main and only SDK entry point, representing its facade
 public class Pokespeare {
     
     private let version: PokemonVersion
@@ -27,6 +30,12 @@ public class Pokespeare {
     
     private let bag = DisposeBag()
     
+    /// Exposed service that given a Pokemon name returns its Shakespearean description
+    /// - Parameters:
+    ///   - pokemonName: the name of the Pokemon to search and retrieve description
+    ///   - completion:
+    ///   If not nil, description string is the Shakespearean description.
+    ///   If not nil, error is the raised error from network calls
     public func retrieveDescription(ofPokemon pokemonName: String, completion: @escaping (_ description: String?, _ error: Error?) -> Void) {
         let pokemonInfodesc = PokemonInfoAPIDescriptor(name: pokemonName)
         PokemonInfoAPIClient.pokemonDescriptions(fromDescriptor: pokemonInfodesc)
@@ -45,6 +54,12 @@ public class Pokespeare {
             .disposed(by: bag)
     }
     
+    /// Exposed service that given a Pokemon name returns its front sprite
+    /// - Parameters:
+    ///   - pokemonName: the name of the Pokemon to search and retrieve description
+    ///   - completion:
+    ///   If not nil, spriteUrl string is the Pokemon sprite url.
+    ///   If not nil, error is the raised error from network calls
     public func retrieveSprite(ofPokemon pokemonName: String, completion: @escaping (_ spriteUrl: String?, _ error: Error?) -> Void) {
         let pokemonInfodesc = PokemonInfoAPIDescriptor(name: pokemonName)
         PokemonInfoAPIClient.pokemonSprites(fromDescriptor: pokemonInfodesc)
