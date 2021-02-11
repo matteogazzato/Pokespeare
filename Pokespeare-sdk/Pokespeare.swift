@@ -24,6 +24,8 @@ public class Pokespeare {
     
     private let version: PokemonVersion
     
+    /// Initializer used to configure SDK instance
+    /// - Parameter version: is the Pokemon game version used to filter description and sprites 
     public init(withPokemonVersion version: PokemonVersion = .blue) {
         self.version = version
     }
