@@ -28,7 +28,7 @@ enum ContentType: String {
     case formEncode = "application/x-www-form-urlencoded"
 }
 
-enum APIError: Error {
+public enum APIError: Error {
     case badRequest             //Status code 400
     case forbidden              //Status code 403
     case notFound               //Status code 404

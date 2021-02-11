@@ -13,5 +13,11 @@ target 'Pokespeare-sdk-tests' do
 end
 
 target 'Pokespeare-sdk-examples' do
+  pod 'JGProgressHUD'
   pod 'Pokespeare-sdk', :path => '.'
 end
+
+target 'Pokespeare-sdk-examples-tests' do
+  pod 'SnapshotTesting', '~> 1.8.1'
+end
+

@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.3.0)
+  - JGProgressHUD (2.2)
   - Kingfisher (6.1.0)
   - Pokespeare-sdk (0.0.1):
     - Alamofire
@@ -16,6 +17,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - JGProgressHUD
   - Kingfisher (~> 6.0)
   - Pokespeare-sdk (from `.`)
   - RxCocoa
@@ -25,6 +27,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - JGProgressHUD
     - Kingfisher
     - RxCocoa
     - RxRelay
@@ -37,6 +40,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 2c792affbdc2f18016e08fdbcacd60aebe1ba593
+  JGProgressHUD: d83d7a981b85d11205e19ff8ad5bb9c40571c847
   Kingfisher: f5d8d60a0ef3edd642fd781bae60918599901aff
   Pokespeare-sdk: 2e81628f0f7d9cf8ec162633041812908d10d61f
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
@@ -44,6 +48,6 @@ SPEC CHECKSUMS:
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SnapshotTesting: 38947050d13960d57a4a9c166fcf51bca7d56970
 
-PODFILE CHECKSUM: 8a3c91bed4d69492ad31299f66cdb6ac5d424096
+PODFILE CHECKSUM: e70a398d4d8ed7c0ace9073e5eab51a59d554408
 
 COCOAPODS: 1.10.1

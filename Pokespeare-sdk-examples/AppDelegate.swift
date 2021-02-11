@@ -14,6 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Possibly setup storage on first run
+        if !UserDefaults.standard.bool(forKey: "FirstRun") {
+            Storage.initialize()
+            UserDefaults.standard.set(true, forKey: "FirstRun")
+        }
+        
         return true
     }
 
