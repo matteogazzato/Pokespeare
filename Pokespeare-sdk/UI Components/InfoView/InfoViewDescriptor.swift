@@ -5,6 +5,7 @@
 //  Created by Matteo Gazzato on 09/02/21.
 //
 
+/// Struct descriptor representing InfoView UI elements
 public struct InfoViewDescriptor {
     let description: String
     let name: String
