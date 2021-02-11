@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  Pokespeare-sdk-examples
+//  PokespeareApp
 //
 //  Created by Matteo Gazzato on 02/02/21.
 //

@@ -1,6 +1,6 @@
 //
 //  ShakespeareAPIClientTests.swift
-//  Pokespeare-sdk-tests
+//  PokespeareSDK_Tests
 //
 //  Created by Matteo Gazzato on 04/02/21.
 //

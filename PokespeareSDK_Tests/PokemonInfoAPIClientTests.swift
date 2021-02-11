@@ -1,6 +1,6 @@
 //
 //  PokemonInfoAPIClientTests.swift
-//  Pokespeare-sdk-tests
+//  PokespeareSDK_Tests
 //
 //  Created by Matteo Gazzato on 03/02/21.
 //

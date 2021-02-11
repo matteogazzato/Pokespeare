@@ -1,6 +1,6 @@
 //
 //  InfoView.swift
-//  Pokespeare-sdk
+//  PokespeareSDK
 //
 //  Created by Matteo Gazzato on 09/02/21.
 //

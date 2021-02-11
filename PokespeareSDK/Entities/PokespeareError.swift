@@ -1,6 +1,6 @@
 //
 //  PokespeareError.swift
-//  Pokespeare-sdk
+//  PokespeareSDK
 //
 //  Created by Matteo Gazzato on 04/02/21.
 //

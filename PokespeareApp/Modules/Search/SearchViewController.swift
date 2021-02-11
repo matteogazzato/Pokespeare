@@ -1,9 +1,9 @@
 //
 //  SearchViewController.swift
-//  Pokespeare-sdk
+//  PokespeareSDK
 //
 //  Created Matteo Gazzato on 09/02/21.
-//  Copyright © 2021 ___ORGANIZATIONNAME___. All rights reserved.
+//  Copyright © 2021 Matteo Gazzato. All rights reserved.
 //
 
 import UIKit

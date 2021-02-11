@@ -1,6 +1,6 @@
 //
 //  APIConfiguration.swift
-//  Pokespeare-sdk
+//  PokespeareSDK
 //
 //  Created by Matteo Gazzato on 02/02/21.
 //
