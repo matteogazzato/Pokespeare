@@ -1,6 +1,0 @@
-framework module PokespeareSDK {
-  umbrella header "PokespeareSDK-umbrella.h"
-
-  export *
-  module * { export * }
-}

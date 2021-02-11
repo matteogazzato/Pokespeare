@@ -1,6 +1,0 @@
-framework module Pods_PokespeareApp {
-  umbrella header "Pods-PokespeareApp-umbrella.h"
-
-  export *
-  module * { export * }
-}
