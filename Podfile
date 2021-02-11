@@ -2,9 +2,9 @@ platform :ios, '13.0'
 use_frameworks!
 
 target 'PokespeareSDK' do
-  pod 'RxSwift'
-  pod 'RxCocoa'
-  pod 'Alamofire'
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5.1.1'
+  pod 'Alamofire', '~> 5.3.0'
   pod 'Kingfisher', '~> 6.0'
 end
 
@@ -14,7 +14,7 @@ end
 
 target 'PokespeareApp' do
   pod 'PokespeareSDK', :path => '.'
-  pod 'JGProgressHUD'
+  pod 'JGProgressHUD', '~> 2.2'
 end
 
 target 'PokespeareApp_Tests' do

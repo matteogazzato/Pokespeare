@@ -16,12 +16,12 @@ PODS:
   - SnapshotTesting (1.8.2)
 
 DEPENDENCIES:
-  - Alamofire
-  - JGProgressHUD
+  - Alamofire (~> 5.3.0)
+  - JGProgressHUD (~> 2.2)
   - Kingfisher (~> 6.0)
   - PokespeareSDK (from `.`)
-  - RxCocoa
-  - RxSwift
+  - RxCocoa (~> 5.1.1)
+  - RxSwift (~> 5)
   - SnapshotTesting (~> 1.8.1)
 
 SPEC REPOS:
@@ -48,6 +48,6 @@ SPEC CHECKSUMS:
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SnapshotTesting: 38947050d13960d57a4a9c166fcf51bca7d56970
 
-PODFILE CHECKSUM: d3ae80b97ee0d7bf7651a42093eba79700c54bd6
+PODFILE CHECKSUM: aa9abc1fd87877a99f0755563b5da8880db6f0ab
 
 COCOAPODS: 1.10.1
