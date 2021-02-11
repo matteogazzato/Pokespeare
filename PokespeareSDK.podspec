@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
   (TO DO) Add a longer description of Pokespeare SDK, this is just written to pass cocoapods validator
                    DESC
 
-  spec.homepage     = "https://github.com/matteogazzato/Pokespeare-sdk"
+  spec.homepage     = "https://github.com/matteogazzato/PokespeareSDK"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -68,7 +68,7 @@ Pod::Spec.new do |spec|
   # spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  spec.ios.deployment_target = "14.0"
+  spec.ios.deployment_target = "13.0"
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
@@ -81,7 +81,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/matteogazzato/Pokespeare-sdk.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/matteogazzato/PokespeareSDK.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
