@@ -11,7 +11,7 @@ import PokespeareSDK
 
 class SearchNetworkManager: SearchNetworkManagerProtocol {
     
-    private let pokespeare = Pokespeare()
+    private let pokespeare = PokespeareSDK()
     
     func fetchDescription(forPokemonWithName name: String, completion: @escaping (String?, SearchError?) -> Void) {
         pokespeare.retrieveDescription(ofPokemon: name) { (description, error) in

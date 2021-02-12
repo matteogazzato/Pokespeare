@@ -1,5 +1,5 @@
 //
-//  Pokespeare.swift
+//  PokespeareSDK.swift
 //  PokespeareSDK
 //
 //  Created by Matteo Gazzato on 04/02/21.
@@ -19,8 +19,8 @@ public enum PokemonVersion: String {
 
 // MARK: - Public Utils
 
-/// Pokespeare class is the main and only SDK entry point, representing its facade
-public class Pokespeare {
+/// PokespeareSDK class is the main and only SDK entry point, representing its facade
+public class PokespeareSDK {
     
     private let version: PokemonVersion
     

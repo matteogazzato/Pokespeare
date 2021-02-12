@@ -13,7 +13,7 @@ class PokespeareTests: XCTestCase {
     func testRetrieveDescription() throws {
         let name = "charizard"
         let descriptionExpectation = expectation(description: "Description received")
-        let pokespeare = Pokespeare()
+        let pokespeare = PokespeareSDK()
         pokespeare.retrieveDescription(ofPokemon: name) { (description, error) in
             XCTAssertNil(error)
             let expectedTranslation = "Spits fire yond is hot enow to melt boulders. Known to cause forest fires unintentionally."
@@ -26,7 +26,7 @@ class PokespeareTests: XCTestCase {
     func testRetrieveSprite() throws {
         let name = "mew"
         let spriteExpectation = expectation(description: "Sprite received")
-        let pokespeare = Pokespeare()
+        let pokespeare = PokespeareSDK()
         pokespeare.retrieveSprite(ofPokemon: name) { (spriteUrl, error) in
             XCTAssertNil(error)
             let expectedSpriteUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png"

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		470679D925CCB35D00071A2E /* PokespeareError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470679D825CCB35D00071A2E /* PokespeareError.swift */; };
 		47067A1D25CCB8E600071A2E /* PokespeareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47067A1C25CCB8E600071A2E /* PokespeareTests.swift */; };
-		4716B0D925CCAC55008835E9 /* Pokespeare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716B0D825CCAC55008835E9 /* Pokespeare.swift */; };
+		4716B0D925CCAC55008835E9 /* PokespeareSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716B0D825CCAC55008835E9 /* PokespeareSDK.swift */; };
 		4716B0DE25CCB01E008835E9 /* PokespeareHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4716B0DD25CCB01E008835E9 /* PokespeareHelpers.swift */; };
 		474DCBB925D34A0100CBECEC /* SearchNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474DCBB125D34A0100CBECEC /* SearchNetworkManager.swift */; };
 		474DCBBA25D34A0100CBECEC /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474DCBB225D34A0100CBECEC /* SearchPresenter.swift */; };
@@ -99,7 +99,7 @@
 		4701F8D225D5D9D3003CF3E7 /* PokespeareSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PokespeareSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		470679D825CCB35D00071A2E /* PokespeareError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokespeareError.swift; sourceTree = "<group>"; };
 		47067A1C25CCB8E600071A2E /* PokespeareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokespeareTests.swift; sourceTree = "<group>"; };
-		4716B0D825CCAC55008835E9 /* Pokespeare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokespeare.swift; sourceTree = "<group>"; };
+		4716B0D825CCAC55008835E9 /* PokespeareSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokespeareSDK.swift; sourceTree = "<group>"; };
 		4716B0DD25CCB01E008835E9 /* PokespeareHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokespeareHelpers.swift; sourceTree = "<group>"; };
 		473C8DC825D5DBE300537AE8 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		473C8DCA25D5DBE300537AE8 /* JGProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JGProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -315,7 +315,7 @@
 				470679D725CCB34900071A2E /* Entities */,
 				47DF036A25CA0FEA00DBBD2C /* Network */,
 				475A734525C9F97F0044DA35 /* Info.plist */,
-				4716B0D825CCAC55008835E9 /* Pokespeare.swift */,
+				4716B0D825CCAC55008835E9 /* PokespeareSDK.swift */,
 				4716B0DD25CCB01E008835E9 /* PokespeareHelpers.swift */,
 			);
 			path = PokespeareSDK;
@@ -882,7 +882,7 @@
 				47DF037C25CA12DF00DBBD2C /* PokemonInfoAPI.swift in Sources */,
 				47B0241325D2F348003E537D /* InfoView.swift in Sources */,
 				47DF037125CA105200DBBD2C /* NetworkClient.swift in Sources */,
-				4716B0D925CCAC55008835E9 /* Pokespeare.swift in Sources */,
+				4716B0D925CCAC55008835E9 /* PokespeareSDK.swift in Sources */,
 				47B6036125CB658F00960F5B /* ShakespeareAPI.swift in Sources */,
 				47B6031C25CB4E2F00960F5B /* PokemonInfoAPIClient.swift in Sources */,
 				47B6035C25CB601C00960F5B /* Sprite.swift in Sources */,
