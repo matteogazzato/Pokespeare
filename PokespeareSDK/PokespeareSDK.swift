@@ -39,7 +39,7 @@ public class PokespeareSDK {
     ///   If not nil, description string is the Shakespearean description.
     ///   If not nil, error is the raised error from network calls
     public func retrieveDescription(ofPokemon pokemonName: String, completion: @escaping (_ description: String?, _ error: Error?) -> Void) {
-        let pokemonInfodesc = PokemonInfoAPIDescriptor(name: pokemonName)
+        let pokemonInfodesc = PokemonInfoAPIDescriptor(name: pokemonName.lowercased())
         PokemonInfoAPIClient.pokemonDescriptions(fromDescriptor: pokemonInfodesc)
             .flatMap { pokemonResponse -> Observable<ShakespeareDescriptionResponse> in
                 guard let description = PokespeareHelpers.filter(flavorTextEntries: pokemonResponse.flavorTextEntries,
@@ -63,7 +63,7 @@ public class PokespeareSDK {
     ///   If not nil, spriteUrl string is the Pokemon sprite url.
     ///   If not nil, error is the raised error from network calls
     public func retrieveSprite(ofPokemon pokemonName: String, completion: @escaping (_ spriteUrl: String?, _ error: Error?) -> Void) {
-        let pokemonInfodesc = PokemonInfoAPIDescriptor(name: pokemonName)
+        let pokemonInfodesc = PokemonInfoAPIDescriptor(name: pokemonName.lowercased())
         PokemonInfoAPIClient.pokemonSprites(fromDescriptor: pokemonInfodesc)
             .subscribe { pokemonResponse in
                 completion(pokemonResponse.sprites.frontDefault, nil)
