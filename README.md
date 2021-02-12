@@ -30,6 +30,9 @@ At the moment, the SDK has three main different features:
 
 PokespeareSDK works with [PokeApi](https://pokeapi.co/) to retrieve Pokemon sprites and Pokemon not-translated descriptions and [Funtranslations](https://funtranslations.com/api/shakespeare) to translate Pokemon description in Shakespearean style.
 
+### ⚠️
+Due to [Funtranslations](https://funtranslations.com/api/shakespeare) ratelimit for usage without subscription, SDK is able to retrive description five times per hour.
+
 ### Installation
 #### CocoaPods
 
