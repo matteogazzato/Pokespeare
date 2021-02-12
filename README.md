@@ -12,6 +12,7 @@
 * [About the Project](#about-the-project)
 * [SDK](#sdk)
 * [Exemple App](#example-app)
+* [Requirements](#requirements)
 * [TBD](#tbd)
 * [Contact](#contact)
 * [LICENSE](#license)
@@ -90,6 +91,10 @@ Network requests and responses are built on top of [Alamofire](https://github.co
 #### SnapshotTesting
 Both SDK and example app UI tests are performed using [SnapshotTesting](https://github.com/pointfreeco/swift-snapshot-testing), a powerful and easy to integrate library to test layout compliance based on a "snapshotting" approach.
 
+### Tests
+Select PokespeareSDK target and do a `cmd + U`.
+Note about UI tests: as per [SnapshotTesting indications](https://github.com/pointfreeco/swift-snapshot-testing/blob/main/Documentation/Available-Snapshot-Strategies.md#image-10), snapshot must be compared using a simulator with the same OS, for this reason tests should be launched using iPhone 12 Pro.
+
 <!-- Example App -->
 ## Example App
 The project contains `PokespeareApp`, an example app that shows SDK functionalities.
@@ -97,17 +102,27 @@ The project contains `PokespeareApp`, an example app that shows SDK functionalit
 2. Download/clone the project locally
 3. Do a `pod install` from root project
 4. Open `.xcworkspace`
-5. cmd + R
-6. Search a Pokemon 😉
+5. Select `PokespeareApp` target
+6. cmd + R
+7. Search a Pokemon 😉
+
+### Tests
+Select PokespeareApp target and do a `cmd + U`.
+Note about UI tests: as per [SnapshotTesting indications](https://github.com/pointfreeco/swift-snapshot-testing/blob/main/Documentation/Available-Snapshot-Strategies.md#image-10), snapshot must be compared using a simulator with the same OS, for this reason tests should be launched using iPhone 12 Pro.
 
 #### Extras about PokespeareApp
 `PokespeareApp` was realized using [VIPER](https://www.raywenderlich.com/8440907-getting-started-with-the-viper-architecture-pattern) approach as architecture pattern.
+
+<!-- Requirements -->
+## Requirements
+Mminimum iOS version is 13.0 (default). Developed and tested using Xcode 12.4.
 
 <!-- TBD -->
 ## TBD
 * Swift Package Manager Support
 * Add more Pokemon versions
 * Update UI component as `@IBDesignable`
+* More... 🦄
 
 <!-- CONTACT -->
 ## Contacts
