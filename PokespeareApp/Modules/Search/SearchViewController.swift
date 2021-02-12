@@ -35,6 +35,13 @@ class SearchViewController: UIViewController {
     fileprivate func setupUI() {
         // setup UI elements here
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .bookmarks, target: self, action: #selector(showFavourites))
+        searchTextField.delegate = self
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard)))
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+        self.resignFirstResponder()
     }
     
     @objc
@@ -66,3 +73,14 @@ extension SearchViewController: SearchViewProtocol {
         present(alert, animated: true, completion: nil)
     }
 }
+
+// MARK: - UITextFieldDelegate
+extension SearchViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        resignFirstResponder()
+        search(textField)
+        return true
+    }
+}
+

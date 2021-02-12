@@ -60,7 +60,9 @@ extension PokemonInfoViewController: PokemonInfoViewProtocol {
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(addRemoveFromFavs))
         if containerView?.subviews.isEmpty ?? false {
             let infoDesc = InfoViewDescriptor(description: pokemon.description, name: pokemon.name, sprite: pokemon.sprite)
-            let infoView = InfoView(frame: containerView.frame)
+            let frame = CGRect(origin: CGPoint(x: 0.0, y: 0.0),
+                               size: containerView.frame.size)
+            let infoView = InfoView(frame: frame)
             infoView.updateUI(withDescriptor: infoDesc)
             containerView.addSubview(infoView)
         }

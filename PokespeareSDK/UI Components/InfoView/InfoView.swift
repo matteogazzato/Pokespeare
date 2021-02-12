@@ -18,7 +18,6 @@ public class InfoView: CustomView {
     
     override public func setupUI() {
         self.descriptionTextView.textColor = .black
-        self.backgroundColor = .red
     }
 }
 
